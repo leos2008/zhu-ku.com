@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../assets/plug/jquery.js"></script>    
+	<script src="../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="assets/plug/dataTables/amazeui.datatables.js"></script> 
+	
+	<link rel="stylesheet" href="../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../assets/js/amazeui.js"></script>   
+</head>
+<body> 
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-3">
+					<div class="indexlogo"><img src="../../assets/images/logo.png" alt=""></div>
+				</div><!-- /am-u-sm-3 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con -->  
+	
+	<div class="login-main">
+		<div class="am-container">
+			<div class="login-text">
+				<h2>筑库管理平台</h2>
+				<h3>平台上招标信息与供应商数据，均通过严格审核， 即刻入驻免年费</h3>
+			</div><!-- /login-text -->
+			<div class="login-box">
+					<h4 id="logintitle">登录 | LOGIN</h4>
+					<div class="login-inner am-g-collapse">
+						<form id="accountLogin" class="am-form logincontent am-form-horizontal">
+							<div class="am-form-group"> 
+								<div class="am-u-sm-12">
+									<input type="text"  placeholder="请输入账号">
+								</div>
+							</div> 
+
+							<div class="am-form-group"> 
+								<div class="am-u-sm-12">
+									<input type="password" placeholder="请输入密码">
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="am-u-sm-6">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> 下次自动登录
+										</label>
+									</div>
+								</div>
+								<div class="am-u-sm-6 am-text-right">
+									<a href="javascript:;" onclick="toMobile()">手机验证码登录</a>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="am-u-sm-12">
+									<button type="submit" class="am-btn am-btn-lg am-radius am-btn-block am-btn-primary">登　录</button>
+								</div>
+								<div class="am-u-sm-6 am-text-left link">
+									<a href="javascript:;" data-am-modal="{target: '#forgetPw', closeViaDimmer: 0, width: 600}">忘记密码</a>
+								</div>
+								<div class="am-u-sm-6 am-text-right link">
+									<a href="javascript:;" onclick="reg()">免费注册</a>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="am-u-sm-2">
+									<a href="javascript:;" onclick="toWx()" class="am-btn am-btn-sm am-radius am-btn-success"><i class="am-icon-weixin"></i> 微信登录</a>
+								</div> 
+							</div>
+						</form>
+						<form id="mobileLogin" class="am-form logincontent am-form-horizontal" style="display: none"> 
+
+							<div class="am-form-group"> 
+								<div class="am-u-sm-12">
+									<input type="text"  placeholder="请输入手机号">
+								</div>
+							</div>
+							<div class="am-form-group"> 
+								<div class="am-u-sm-7">
+									<input type="text"  placeholder="请输入验证码">
+								</div>
+								<div class="am-u-sm-5">
+									<a href="javascript:;" class="am-btn am-btn-block am-radius am-btn-primary">获取验证码</a>
+								</div>
+							</div> 
+
+							<div class="am-form-group">
+								<div class="am-u-sm-6">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> 下次自动登录
+										</label>
+									</div>
+								</div>
+								<div class="am-u-sm-6 am-text-right">
+									<a href="javascript:;" onclick="toAccount()">账号登录</a>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="am-u-sm-12">
+									<button type="submit" class="am-btn am-btn-lg am-radius am-btn-block am-btn-primary">登　录</button>
+								</div>
+								<div class="am-u-sm-6 am-text-left link">
+									<a href="javascript:;" data-am-modal="{target: '#forgetPw', closeViaDimmer: 0, width: 600}">忘记密码</a>
+								</div>
+								<div class="am-u-sm-6 am-text-right link">
+									<a href="javascript:;" onclick="reg()">免费注册</a>
+								</div>
+							</div>
+
+							<div class="am-form-group">
+								<div class="am-u-sm-2">
+									<a href="javascript:;" class="am-btn am-btn-sm am-radius am-btn-success"><i class="am-icon-weixin"></i> 绑定微信</a>
+								</div> 
+							</div>
+						</form>
+						<div id="wxLogin" class="wxlogin" style="display: none">
+							<img src="../../assets/images/qrcode.jpg" alt="">
+							<h5>扫描二维码使用微信登录</h5>
+							<a href="javascript:;" onclick="toAccount()"><< 使用账号登录</a>
+						</div>
+						<div id="regWin" class="regWin am-tabs" data-am-tabs  style="display: none"> 
+								<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify am-nav-underline-yellow">
+									<li class="am-active"><a href="javascript: void(0)">我是供应方</a></li>
+									<li><a href="javascript: void(0)">我是需求方</a></li> 
+								</ul>
+
+								<div class="am-tabs-bd">
+									<div class="am-tab-panel am-active">
+										<form class="am-form am-form-horizontal">
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+												<input type="text"  placeholder="请输入你的手机号">
+												</div>
+											</div> 
+
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+													<input type="text"  placeholder="请输入企业名称">
+												</div>
+											</div>
+
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+													<input type="password" placeholder="请输入密码6-12位">
+												</div>
+											</div>
+
+											<div class="am-form-group">
+												<div class="am-u-sm-12">
+													 <span>请选择您的主营业务：</span>
+													 <div class="regSelect" data-am-modal="{target: '#selectCategory', closeViaDimmer: 0, width: 900}">
+													 	<span>景观设计,</span>
+													 	<span>精装修设计,</span>
+													 	<span>施工图设计,</span>
+													 	<span>景观设计,</span>
+													 	<span>精装修设计,</span>
+													 	<span>施工图设计</span>
+													 </div>
+												</div> 
+											</div> 
+										</form>
+									</div><!-- /am-tab-panel -->
+									<div class="am-tab-panel">
+										<form class="am-form am-form-horizontal">
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+												<input type="text"  placeholder="请输入你的手机号">
+												</div>
+											</div> 
+
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+													<input type="text"  placeholder="请输入企业名称">
+												</div>
+											</div>
+
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+													<input type="text"  placeholder="请输入您的姓名">
+												</div>
+											</div>
+
+											<div class="am-form-group"> 
+												<div class="am-u-sm-12">
+													<input type="password" placeholder="请输入密码">
+												</div>
+											</div> 
+										</form>
+									</div> 
+								</div> <!-- /am-tabs-bd -->
+								<div class="logincontent am-g">
+									<div class="am-u-sm-8">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox">《筑库网平台用户协议》
+										</label>
+									</div>
+									</div>
+									<div class="am-u-sm-4">
+									<div class="am-text-right">
+												<a href="javascript:;" onclick="toLogin()">返回登录</a>
+												</div>
+									</div>
+									<button onclick="location.href= '02-注册成功.html'" class="am-btn am-btn-lg am-radius am-btn-block am-btn-primary">免费注册</button>
+								</div>
+						</div><!-- /regWin -->
+						<script>
+							function toWx() { 
+								$("#wxLogin").siblings().css('display', 'none');
+								$("#wxLogin").fadeIn(); 
+							}
+							function toMobile() {
+								$("#mobileLogin").siblings().css('display', 'none');
+								$("#mobileLogin").fadeIn();
+							}
+							function toAccount() { 
+								$("#accountLogin").siblings().css('display', 'none');
+								$("#accountLogin").fadeIn();
+							}
+							function reg() { 
+								$("#regWin").siblings().css('display', 'none');
+								$("#regWin").fadeIn();
+								$("#logintitle").text("注册 | REGISTER")
+							}
+							function toLogin() { 
+								$("#regWin").css('display', 'none');
+								$("#accountLogin").fadeIn();
+								$("#logintitle").text("登录 | LOGIN")
+							}
+						</script>
+					</div><!-- /login-inner -->
+				</div><!-- /login-box -->
+		</div><!-- /am-container -->
+
+		<div class="am-modal " tabindex="-1" id="forgetPw">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">忘记密码
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="am-modal-bd am-g-collapse logincontent">
+					<form class="am-form am-form-horizontal"> 
+
+						<div class="am-form-group"> 
+							<label class="am-u-sm-2 am-form-label">手机号码：</label>
+							<div class="am-u-sm-10 am-u-end">
+								<input type="text"  placeholder="手机号码">
+							</div>
+						</div>
+						<div class="am-form-group"> 
+							<label class="am-u-sm-2 am-form-label">设置新密码：</label>
+							<div class="am-u-sm-10 am-u-end">
+								<input type="password"  placeholder="设置新密码">
+							</div>
+						</div>
+						<div class="am-form-group">  
+							<label class="am-u-sm-2 am-form-label">验证码：</label>
+							<div class="am-u-sm-8">
+								<input type="text"  placeholder="请输入验证码">
+							</div>
+							<div class="am-u-sm-2">
+								<a href="javascript:;" class="am-btn am-btn-block am-radius am-btn-primary">获取验证码</a>
+							</div>
+						</div>  	
+
+						<div class="am-form-group">
+							<div class="am-u-sm-8 am-u-sm-offset-2">
+								<a data-am-modal-close class="am-btn am-radius am-btn-primary">确定</a>
+							</div> 
+						</div> 
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-modal " tabindex="-1" id="selectCategory">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">选择分类
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="am-modal-bd"> 
+					<div class="am-g selectC">
+					<div class="am-u-sm-4">
+						<div class="catSel">
+							<span title="设计/造价/检测/服务/顾问">设计/造价/检测/服务/顾问</span>
+							<span title="建筑项目工程">建筑项目工程</span>
+							<span title="建筑材料">建筑材料</span>
+							<span title="建筑机械">建筑机械</span>
+							<span title="建筑设备">建筑设备</span>
+							<span title="建筑项目工程">建筑项目工程</span>
+							<span title="建筑材料">建筑材料</span>
+							<span title="建筑机械">建筑机械</span>
+							<span title="建筑设备">建筑设备</span>
+							<span title="建筑项目工程">建筑项目工程</span>
+							<span title="建筑材料">建筑材料</span>
+							<span title="建筑机械">建筑机械</span>
+							<span title="建筑设备">建筑设备</span>
+						</div>
+					</div><!-- /am-u-sm-4 -->
+					<div class="am-u-sm-4">
+						<div class="catSel">
+							<span title="建筑设计">建筑设计</span> 
+						</div>
+					</div><!-- /am-u-sm-4 --> 
+					<div class="am-u-sm-4">
+						<div class="catSel">
+							<span title="景观设计">景观设计</span>
+							<span title="精装修设计">精装修设计</span>
+							<span title="施工图设计">施工图设计</span> 
+						</div>
+					</div><!-- /am-u-sm-4 -->
+					<div class="am-u-sm-12">
+						<div class="category-selected">
+							<label>已经选择分类：</label>
+							<span class="am-badge am-badge-primary am-text-sm">景观设计 <a href="#" class="am-close">&times;</a></span>
+							<span class="am-badge am-badge-primary am-text-sm">精装修设计 <a href="#" class="am-close">&times;</a></span>
+							<span class="am-badge am-badge-primary am-text-sm">施工图设计 <a href="#" class="am-close">&times;</a></span>
+						</div>
+					</div><!-- /am-u-sm-12 -->
+					<div class="am-u-sm-12 am-text-right">
+						<hr>
+						<button class="am-btn am-radius am-btn-primary" >确定</button>
+						<button class="am-btn am-radius am-btn-default" data-am-modal-close>取消</button>
+					</div><!-- /am-u-sm-12 -->
+					</div><!-- /am-g -->
+				</div>
+			</div>
+		</div>
+	</div><!-- /login-main -->
+
+	<div class="footer">
+		<div class="am-container">
+			<dl class="login-bottom">
+				<dt>友情链接</dt>
+				<dd><a href="#">关于我们</a></dd>
+				<dd><a href="#">联系我们</a></dd>
+				<dd><a href="#">帮助中心</a></dd>
+				<dd><a href="#">法律声明</a></dd>
+				<dd><a href="#">服务条款</a></dd>
+			</dl>
+		</div><!-- /am-container -->
+	</div><!-- /footer -->
+
+	
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../../assets/plug/jquery.js"></script>    
+	<script src="../../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="../../../assets/plug/dataTables/amazeui.datatables.js"></script> 
+
+	<link rel="stylesheet" href="../../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+ 
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-3">
+					<div class="indexlogo"><img src="../../../assets/images/logo.png" alt=""></div>
+				</div><!-- /am-u-sm-3 -->
+				<div class="am-u-sm-9">
+					<div class="header-nav-radius"> 
+						<ul class="nav">
+							<li><a href="#">工作台</a></li>
+							<li class="on"><a href="#">采购管理</a></li>
+							<li><a href="#">供应商管理</a></li>
+							<li><a href="#">招标管理</a></li>
+							<li><a href="#">基础设置</a></li>
+						</ul>
+					</div><!-- /header-nav-radius -->
+				</div><!-- /am-u-sm-9 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con --> 
+
+	<hr>
+	<div class="am-container">
+		<div class="am-g">
+			<div class="am-u-sm-3">
+				<dl class="leftMenu"> 
+					<dd class="on"><a href="#">我的需求单</a></dd>
+					<dd><a href="#">我的采购单</a></dd>   
+				</dl>
+			</div><!-- /am-u-sm-3 -->
+
+			<div class="am-u-sm-9">
+				<div class="boxStyle"> 
+					<h4 class="box-title box-title-primary">我的需求单>新增需求单</h4>
+					<div class="boxContent">  
+						<div class="tableContent">
+							<div class="toolbar">
+								<div class="am-fl am-padding-right">
+									<a href="#" class="am-btn am-btn-xs am-radius am-btn-line"><i class="am-icon-trash"></i> 删除</a>
+								</div>
+								<div class="am-fl">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> 主材
+										</label> 
+										<label>
+											<input type="checkbox"> 辅材
+										</label> 
+										<label>
+											<input type="checkbox"> 甲供材
+										</label>
+									</div>
+								</div><!-- /am-fl -->
+								<div class="btngroup">
+									<a href="#" class="am-btn am-btn-xs am-radius"><i class="am-icon-folder-open-o"></i> 从外部文件导入</a>
+									<a href="#" class="am-btn am-btn-xs am-radius"><i class="am-icon-download"></i> 物资申请模板下载</a> 
+									<a href="#" id="selectSupplier" class="am-btn am-btn-sm am-radius am-btn-primary">选择供应商</a> 
+								</div><!-- /btngroup -->
+							</div><!-- /toolbar -->
+							<div class="tableScroll">
+								<table class="am-table am-table-bordered am-table-hover" id="example">
+									<thead>
+										<tr>
+											<th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+											<th>序号</th>
+											<th>计价清单编码</th>
+											<th>物资名称</th>
+											<th>规格型号</th>
+											<th>申请数量</th>
+											<th>预算数量</th>
+											<th>单价（含税/元）</th>	
+											<th>预算金额（元）</th>	
+											<th>单位</th>
+											<th>供应商</th>
+										</tr>
+									</thead>
+									<tbody> 
+										<tr>
+											<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+											<td>1</td>
+											<td>0001</td>
+											<td>塑料槽板</td>
+											<td>38-45</td>
+											<td>244</td>
+											<td>9999</td>
+											<td>￥39.00</td>
+											<td>￥39.00</td>
+											<td>m2</td>
+											<td>供应商1</td>
+										</tr>
+										<tr>
+											<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+											<td>1</td>
+											<td>0001</td>
+											<td>塑料槽板</td>
+											<td>38-45</td>
+											<td>244</td>
+											<td>9999</td>
+											<td>￥39.00</td>
+											<td>￥39.00</td>
+											<td>m2</td>
+											<td>供应商1</td>
+										</tr>
+										<tr>
+											<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+											<td>1</td>
+											<td>0001</td>
+											<td>塑料槽板</td>
+											<td>38-45</td>
+											<td>244</td>
+											<td>9999</td>
+											<td>￥39.00</td>
+											<td>￥39.00</td>
+											<td>m2</td>
+											<td>供应商1</td>
+										</tr>
+										<tr>
+											<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+											<td>1</td>
+											<td>0001</td>
+											<td>塑料槽板</td>
+											<td>38-45</td>
+											<td>244</td>
+											<td>9999</td>
+											<td>￥39.00</td>
+											<td>￥39.00</td>
+											<td>m2</td>
+											<td>供应商1</td>
+										</tr>
+										<tr>
+											<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+											<td>1</td>
+											<td>0001</td>
+											<td>塑料槽板</td>
+											<td>38-45</td>
+											<td>244</td>
+											<td>9999</td>
+											<td>￥39.00</td>
+											<td>￥39.00</td>
+											<td>m2</td>
+											<td>供应商1</td>
+										</tr>
+									</tbody>
+								</table>
+							</div> 
+						</div><!-- /tableContent -->
+						<div class="well">
+							<form class="am-form">  
+								<div class="am-u-sm-12"> 
+									<div class="my-form">
+										<label class="my-form-label">附件上传</label>
+										<div class="my-form-input">
+											<div class="am-u-sm-12">
+												<div class="am-form-group am-form-file">
+													<button type="button" class="am-btn am-btn-default am-btn-sm">
+														<i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+														<input type="file" multiple>
+													</div>
+
+											</div>
+										</div>
+									</div> 
+									<div class="my-form">
+										<label class="my-form-label">付款方式</label>
+										<div class="my-form-input">
+											<div class="am-u-sm-4">
+												<select name="" id="" class="am-input-sm"><option value="">请选择</option></select>
+											</div>
+										</div>
+									</div> 
+									<div class="my-form">
+										<label class="my-form-label">备注</label>
+										<div class="my-form-input">
+											<div class="am-u-sm-12">
+												<textarea class="am-input-sm" id="" cols="30" rows="10"></textarea>
+											</div>
+										</div>
+									</div> 
+								</div><!-- /am-u-sm-6 -->
+							</form>	
+						</div><!-- /well -->
+					</div><!-- /boxContent -->
+				</div><!-- /boxStyle --> 
+
+				<div class="boxStyle"> 
+					<div class="boxContent am-text-right"> 
+					<a href="#" class="am-btn am-radius am-btn-primary">保存</a>
+					<a href="#" class="am-btn am-radius am-btn-line">提交</a>
+					<a href="#" class="am-btn am-radius am-btn-line">返回</a> 
+					</div>
+				</div><!-- /boxStyle -->
+			</div><!-- /am-u-sm-9 --> 
+		</div><!-- /am-g --> 
+	</div><!-- /am-container -->
+
+	<script>
+		$(function() {
+			var $modal = $('#table-modal');
+			$("#selectSupplier").click(function() {
+					$modal.modal({
+						width:1000,
+					});
+				});
+		});
+	</script>
+	<div class="am-modal" tabindex="-1" id="table-modal">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd am-text-left">选择供应商
+				<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+			</div><!-- /am-modal-hd -->
+			<div class="am-modal-bd">
+				<form class="am-form"> 
+							<div class="am-u-sm-6">
+								<div class="my-form">
+									<label class="my-form-label">物资申请编号</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入物资申请编号">
+										</div> 
+									</div>
+								</div>
+								<div class="my-form">
+									<label class="my-form-label">项目所属地区</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+									</div>
+								</div> 
+								<div class="my-form">
+									<label class="my-form-label">需求单状态</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div> 
+									</div>
+								</div>
+								<div class="my-form">
+									<label class="my-form-label"></label>
+									<div class="my-form-input am-text-left">
+										<div class="am-u-sm-12">
+										<a href="#" class="am-btn am-radius am-btn-xs am-btn-primary"><i class="am-icon-search"></i> 搜索</a>
+										<a href="#" class="am-btn am-radius am-btn-xs am-btn-line"><i class="am-icon-refresh"></i> 重置</a>
+										</div> 
+									</div>
+								</div> 
+							</div><!-- /am-u-sm-6 -->
+							<div class="am-u-sm-6"> 
+								<div class="my-form">
+									<label class="my-form-label">项目名称</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入项目名称">
+										</div>
+									</div>
+								</div> 
+								<div class="my-form">
+									<label class="my-form-label">项目经理</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入项目经理">
+										</div>
+									</div>
+								</div> 
+							</div><!-- /am-u-sm-6 -->
+						</form>	
+						<hr>
+				<div class="tableContent "> 
+					<div class="tableScroll">
+					<table class="am-table am-table-bordered am-table-hover" id="example2">
+						<thead>
+							<tr>
+								<th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+								<th>序号</th>
+								<th>供应商名称</th>
+								<th>所属地区</th>
+								<th>注册资金（万元）</th>
+								<th>产品名称</th>
+								<th>联系人</th>
+								<th>联系电话</th>	 
+							</tr>
+						</thead>
+						<tbody> 
+							<tr> 
+								<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+								<td>1</td>
+								<td>0001</td>
+								<td>湖南省郴州市资兴市新区汇源名邸3栋2单元209</td>
+								<td>1000</td>
+								<td>122</td>
+								<td>黄丽丹</td> 
+								<td>13873398726</td>
+							</tr> 
+							<tr> 
+								<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+								<td>1</td>
+								<td>0001</td>
+								<td>湖南省郴州市资兴市新区汇源名邸3栋2单元209</td>
+								<td>1000</td>
+								<td>122</td>
+								<td>黄丽丹</td> 
+								<td>13873398726</td>
+							</tr> 
+							<tr> 
+								<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+								<td>1</td>
+								<td>0001</td>
+								<td>湖南省郴州市资兴市新区汇源名邸3栋2单元209</td>
+								<td>1000</td>
+								<td>122</td>
+								<td>黄丽丹</td> 
+								<td>13873398726</td>
+							</tr> 
+							<tr> 
+								<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+								<td>1</td>
+								<td>0001</td>
+								<td>湖南省郴州市资兴市新区汇源名邸3栋2单元209</td>
+								<td>1000</td>
+								<td>122</td>
+								<td>黄丽丹</td> 
+								<td>13873398726</td>
+							</tr> 
+							<tr> 
+								<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+								<td>1</td>
+								<td>0001</td>
+								<td>湖南省郴州市资兴市新区汇源名邸3栋2单元209</td>
+								<td>1000</td>
+								<td>122</td>
+								<td>黄丽丹</td> 
+								<td>13873398726</td>
+							</tr>  
+						</tbody>
+					</table>
+					</div>
+					<script>
+								$(function() {
+									$('#example').DataTable({
+										searching: false,
+										fixedHeader: true,
+										"lengthChange": false,   
+										//"scrollY": 200,
+										"scrollX": true,
+									});
+									$('#example2').DataTable({
+										searching: false,
+										fixedHeader: true,
+										"lengthChange": false,  
+										//"scrollX": true,
+									});
+								});
+							</script>
+				</div><!-- /tableContent -->
+			</div><!-- /am-modal-bd -->
+			<div class="am-modal-footer"> 
+				<div class="modal-footer-btns">
+					<a href="#" class="am-btn am-radius am-btn-sm am-btn-primary">保存</a> 
+				</div>
+			</div><!-- /am-modal-footer -->
+		</div><!-- /am-modal-dialog -->
+	</div><!--/am-modal -->
+
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+
+		</body>
+		</html>

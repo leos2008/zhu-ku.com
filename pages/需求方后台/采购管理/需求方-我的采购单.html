@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../../assets/plug/jquery.js"></script>    
+	<script src="../../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="../../../assets/plug/dataTables/amazeui.datatables.js"></script> 
+
+	<link rel="stylesheet" href="../../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+ 
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-3">
+					<div class="indexlogo"><img src="../../../assets/images/logo.png" alt=""></div>
+				</div><!-- /am-u-sm-3 -->
+				<div class="am-u-sm-9">
+					<div class="header-nav-radius"> 
+						<ul class="nav">
+							<li><a href="#">工作台</a></li>
+							<li class="on"><a href="#">采购管理</a></li>
+							<li><a href="#">供应商管理</a></li>
+							<li><a href="#">招标管理</a></li>
+							<li><a href="#">基础设置</a></li>
+						</ul>
+					</div><!-- /header-nav-radius -->
+				</div><!-- /am-u-sm-9 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con --> 
+
+	<hr>
+	<div class="am-container">
+		<div class="am-g">
+			<div class="am-u-sm-3">
+				<dl class="leftMenu"> 
+					<dd><a href="#">我的需求单</a></dd>
+					<dd class="on"><a href="#">我的采购单</a></dd>   
+				</dl>
+			</div><!-- /am-u-sm-3 -->
+
+			<div class="am-u-sm-9">
+				<div class="boxStyle"> 
+					<h4 class="box-title box-title-primary">我的采购单</h4>
+					<div class="boxContent"> 
+						<form class="am-form"> 
+							<div class="am-u-sm-6">
+								<div class="my-form">
+									<label class="my-form-label">物资申请编号</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入物资申请编号">
+										</div> 
+									</div>
+								</div>
+								<div class="my-form">
+									<label class="my-form-label">物资采购编号</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入物资采购编号">
+										</div> 
+									</div>
+								</div>
+								<div class="my-form">
+									<label class="my-form-label">项目所属地区</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+										<div class="am-u-sm-4"><select name="" id="" class="am-input-sm"><option value="">请选择</option></select></div>
+									</div>
+								</div> 
+								<div class="my-form">
+									<div class="am-u-sm-6 am-g-collapse am-padding-right-0">
+										<label class="my-form-label">合同状态</label>
+										<div class="my-form-input">
+										<div class="am-u-sm-12"><select name="" id="" class="am-input-sm"><option value="">已签</option></select></div> 
+										</div>
+									</div>
+									<div class="am-u-sm-6 am-g-collapse">
+										<label class="my-form-label">付款状态</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12"><select name="" id="" class="am-input-sm"><option value="">已付</option></select></div> 
+									</div>
+									</div> 
+								</div>  
+							</div><!-- /am-u-sm-6 -->
+							<div class="am-u-sm-6"> 
+								<div class="my-form">
+									<label class="my-form-label">项目名称</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入项目名称">
+										</div>
+									</div>
+								</div> 
+								<div class="my-form">
+									<label class="my-form-label">项目经理</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12">
+											<input class="am-input-sm" type="text" placeholder="请输入项目经理">
+										</div>
+									</div>
+								</div> 
+								<div class="my-form">
+									<div class="am-u-sm-6 am-g-collapse am-padding-right-0">
+										<label class="my-form-label">发票状态</label>
+										<div class="my-form-input">
+										<div class=""><select name="" id="" class="am-input-sm"><option value="">已开</option></select></div> 
+										</div>
+									</div>
+									<div class="am-u-sm-6 am-g-collapse">
+										<label class="my-form-label">入/出库状态</label>
+									<div class="my-form-input">
+										<div class="am-u-sm-12"><select name="" id="" class="am-input-sm"><option value="">已出</option></select></div> 
+									</div>
+									</div> 
+								</div> 
+								<div class="my-form">
+									<label class="my-form-label"></label>
+									<div class="my-form-input am-text-left">
+										<div class="am-u-sm-12">
+										<a href="#" class="am-btn am-radius am-btn-xs am-btn-primary"><i class="am-icon-search"></i> 搜索</a>
+										<a href="#" class="am-btn am-radius am-btn-xs am-btn-line"><i class="am-icon-refresh"></i> 重置</a>
+										</div> 
+									</div>
+								</div> 
+							</div><!-- /am-u-sm-6 -->
+						</form>	
+						<hr>
+				<div class="tableContent">
+					<div class="toolbar">
+						<a href="需求方-我的需求单-新增.html" class="am-btn am-btn-sm am-radius am-btn-line"><i class="am-icon-plus"></i> 新增</a>
+						<a href="#" class="am-btn am-btn-sm am-radius am-btn-line"><i class="am-icon-trash"></i> 删除</a> <span class="am-fr am-text-warning"> 双击列表数据查看详情或编辑数据</span>
+					</div><!-- /toolbar -->
+					<div class="tableScroll">
+						<table class="am-table am-table-bordered am-table-hover" id="example">
+							<thead>
+								<tr>
+									<th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+									<th>省份</th>
+									<th>地市</th>
+									<th>区县</th>
+									<th>项目名称</th>
+									<th>项目经理</th>
+									<th>物资申请编号</th>
+									<th>物资采购单编号</th>	
+									<th>采购金额（元）</th>
+									<th>申请人</th>
+									<th>供应商</th>
+									<th>创建时间</th>	
+									<th>签订合同</th>	
+									<th>付款状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody> 
+								<tr>
+									<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+									<td>湖南省</td>
+									<td>郴州市</td>
+									<td>资兴市</td>
+									<td>资兴市素养路道路建设项目</td>
+									<td>关羽</td>
+									<td>20181111120000</td>
+									<td>20181111120000</td>
+									<td>￥999.00</td>
+									<td>关羽</td>
+									<td>张飞</td>
+									<td>2018-11-11</td>
+									<td>未签合同</td>
+									<td>未付款</td> 
+									<td><select><option value="------操作------">------操作------</option><option value="导出采购价格清单">导出采购价格清单</option><option value="导出发票">导出发票</option><option value="导出入库单">导出入库单</option><option value="导出出库单">导出出库单</option></select></td>
+								</tr> 
+								<tr>
+									<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+									<td>湖南省</td>
+									<td>郴州市</td>
+									<td>资兴市</td>
+									<td>资兴市素养路道路建设项目</td>
+									<td>关羽</td>
+									<td>20181111120000</td>
+									<td>20181111120000</td>
+									<td>￥999.00</td>
+									<td>关羽</td>
+									<td>张飞</td>
+									<td>2018-11-11</td>
+									<td>未签合同</td>
+									<td>未付款</td> 
+									<td><select><option value="------操作------">------操作------</option><option value="导出采购价格清单">导出采购价格清单</option><option value="导出发票">导出发票</option><option value="导出入库单">导出入库单</option><option value="导出出库单">导出出库单</option></select></td>
+								</tr>
+								<tr>
+									<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+									<td>湖南省</td>
+									<td>郴州市</td>
+									<td>资兴市</td>
+									<td>资兴市素养路道路建设项目</td>
+									<td>关羽</td>
+									<td>20181111120000</td>
+									<td>20181111120000</td>
+									<td>￥999.00</td>
+									<td>关羽</td>
+									<td>张飞</td>
+									<td>2018-11-11</td>
+									<td>未签合同</td>
+									<td>未付款</td> 
+									<td><select><option value="------操作------">------操作------</option><option value="导出采购价格清单">导出采购价格清单</option><option value="导出发票">导出发票</option><option value="导出入库单">导出入库单</option><option value="导出出库单">导出出库单</option></select></td>
+								</tr>
+								<tr>
+									<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+									<td>湖南省</td>
+									<td>郴州市</td>
+									<td>资兴市</td>
+									<td>资兴市素养路道路建设项目</td>
+									<td>关羽</td>
+									<td>20181111120000</td>
+									<td>20181111120000</td>
+									<td>￥999.00</td>
+									<td>关羽</td>
+									<td>张飞</td>
+									<td>2018-11-11</td>
+									<td>未签合同</td>
+									<td>未付款</td> 
+									<td><select><option value="------操作------">------操作------</option><option value="导出采购价格清单">导出采购价格清单</option><option value="导出发票">导出发票</option><option value="导出入库单">导出入库单</option><option value="导出出库单">导出出库单</option></select></td>
+								</tr>
+								<tr>
+									<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+									<td>湖南省</td>
+									<td>郴州市</td>
+									<td>资兴市</td>
+									<td>资兴市素养路道路建设项目</td>
+									<td>关羽</td>
+									<td>20181111120000</td>
+									<td>20181111120000</td>
+									<td>￥999.00</td>
+									<td>关羽</td>
+									<td>张飞</td>
+									<td>2018-11-11</td>
+									<td>未签合同</td>
+									<td>未付款</td> 
+									<td><select><option value="------操作------">------操作------</option><option value="导出采购价格清单">导出采购价格清单</option><option value="导出发票">导出发票</option><option value="导出入库单">导出入库单</option><option value="导出出库单">导出出库单</option></select></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div><!-- /tableContent -->
+					</div><!-- /boxContent -->
+				</div><!-- /boxStyle --> 
+			</div><!-- /am-u-sm-9 --> 
+		</div><!-- /am-g --> 
+	</div><!-- /am-container -->
+
+	<script>
+		$(function() {
+			$('#example').DataTable({
+				searching: false,
+				fixedHeader: true,
+				"lengthChange": false,   
+				"scrollX": true
+			});
+		});
+	</script>
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+			
+		</body>
+		</html>
