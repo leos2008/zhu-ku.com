@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../assets/plug/jquery.js"></script>    
+	<script src="../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="assets/plug/dataTables/amazeui.datatables.js"></script> 
+	
+	<link rel="stylesheet" href="../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<div class="indexlogo"><img src="../../assets/images/logo.png" alt=""></div>
+					<div class="pagetitle"><!-- 我的 --></div>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6">
+					<div class="header-con-search">
+						<div class="keys">
+							<a href="#" class="active">招募</a>
+							<a href="#">招标</a>
+							<a href="#">找需求</a>
+							<a href="#">找供应</a>   
+						</div><!-- /keys -->
+						<div class="am-input-group am-input-group-sm">
+							<input type="text" placeholder="请输入搜索内容" class="am-form-field">
+							<span class="am-input-group-btn">
+								<button class="am-btn am-radius am-btn-primary" type="button">搜索</button>
+							</span>
+						</div><!-- /am-input-group  -->
+					</div><!-- /header-con-search -->
+					<div class="header-con-qr am-text-right">
+						<img src="../../assets/images/qrcode.jpg" alt="">
+					</div>
+				</div><!-- /am-u-sm-6 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con -->
+	<div class="header-nav">
+		<div class="am-container"> 
+			<ul class="nav"> 
+				<li>
+					<div class="category-search" ><i class="am-icon-list"></i><span>分类查找</span>
+						<div id="category-menu" class="category-menu">
+							<div class="category-level-1">
+								<ul>
+									<li>
+										<span>设计/造价/检测/服务/顾问
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑项目工程
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a> 
+												</p> 
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑材料
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">施工图设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑机械
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">立面设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑设备
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">钢结构专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>内部装修
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑劳务公司（班组）
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>  
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>营销服务，物料及其他
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">钢结构专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+								</ul>
+							</div> <!-- /category-level-1 -->
+						</div><!-- /category-menu --> 
+					</div><!-- /category-search -->
+				</li>  
+				<li><a href="首页.html">首页</a></li> 
+				<li class="on"><a href="找需求.html">找需求</a></li> 
+				<li><a href="供应方.html">找供应</a></li> 
+				<li><a href="招募.html">招募</a></li> 
+				<li><a href="#">招标</a></li> 
+				<li><a href="#">管理</a></li> 
+				<li><a href="../31-金融.html">金融</a></li> 
+				<li><a href="#">人才</a></li> 
+				<li><a href="#">资料</a></li> 
+			</ul>  
+		</div><!-- /am-container -->
+	</div><!-- /header-nav --> 
+ 
+	<div class="am-container mt20">
+		<div class="boxStyle with-border-top"> 
+				 <div class="area-contianer">
+				 	 <dl>
+				 	 	<dt>地区：</dt>
+				 	 	<dd>
+				 	 		<div class="select "><!--  select-more --> 
+				 	 				<ul> 
+				 	 					<li class="on">不限</li>
+				 	 					<li>北京市</li>
+				 	 					<li>天津市</li>
+				 	 					<li>河北省</li>
+				 	 					<li>山西省</li>
+				 	 					<li>内蒙古</li>
+				 	 					<li>辽宁省</li>
+				 	 					<li>吉林省</li>
+				 	 					<li>黑龙江</li>
+				 	 					<li>上海市</li>
+				 	 					<li>江苏省</li>
+				 	 					<li>浙江省</li>
+				 	 					<li>安徽省</li>
+				 	 					<li>福建省</li>
+				 	 					<li>江西省</li>
+				 	 					<li>山东省</li>
+				 	 					<li>河南省</li>
+				 	 					<li>湖北省</li>
+				 	 					<li>湖南省</li>
+				 	 					<li>广东省</li>
+				 	 					<li>广西</li>
+				 	 					<li>海南省</li>
+				 	 					<li>重庆市</li>
+				 	 					<li>四川省</li>
+				 	 					<li>贵州省</li>
+				 	 					<li>云南省</li>
+				 	 					<li>西藏</li>
+				 	 					<li>陕西省</li>
+				 	 					<li>甘肃省</li>
+				 	 					<li>青海省</li>
+				 	 					<li>宁夏</li>
+				 	 					<li>新疆</li>
+				 	 					<li>台湾</li>
+				 	 					<li>香港</li>
+				 	 					<li>澳门</li> 
+				 	 				</ul>
+				 	 		</div>
+				 	 		<div class="area-city">
+				 	 			<ul>
+				 	 				<!-- 点击省份修改此<ul>中的对应城市名 -->
+				 	 				<li>城市名</li>
+				 	 				<li>城市名</li>
+				 	 				<li>城市名</li>
+				 	 				<li>城市名</li>
+				 	 				<li>城市名</li>
+				 	 			</ul>
+				 	 		</div> 
+				 	 	</dd>
+				 	 	
+				 	 </dl>
+				 	 <dl>
+				 	 	<dt>状态：</dt>
+				 	 	<dd>
+				 	 		<ul>
+				 	 			<li class="on">不限</li>
+				 	 			<li>招募</li>
+				 	 			<li>招标</li>
+				 	 		</ul>
+				 	 	</dd>
+				 	 </dl>
+				 	 <dl>
+				 	 	<dt>注册资本要求：</dt>
+				 	 	<dd>
+				 	 		<ul>
+				 	 			<li class="on">不限</li> 
+				 	 		</ul>
+				 	 		<div class="inputNum">
+				 	 			<i class="am-icon-angle-left"></i> 
+				 	 			<input type="text" value="0">
+				 	 			<span>万</span>
+				 	 			<button class="am-btn am-btn-xs am-radius am-btn-line "><i class="am-icon-search"></i></button>
+				 	 		</div>
+				 	 	</dd>
+				 	 	
+				 	 </dl>
+				 	 <dl>
+				 	 	<dt>我关注的行业：</dt>
+				 	 	<dd>
+				 	 		<span class="am-badge am-text-sm">设计 <a href="#" class="am-close">&times;</a></span>
+							<span class="am-badge am-text-sm">设计 <a href="#" class="am-close">&times;</a></span>
+							<span class="am-badge am-text-sm">设计 <a href="#" class="am-close">&times;</a></span>
+							<a href="javascript:;" class="am-btn am-btn-xs am-btn-line am-btn-radius"><i class="am-icon-plus" data-am-modal="{target: '#selectCategory', closeViaDimmer: 0, width: 900}"></i></a>
+				 	 	</dd>
+				 	 </dl>
+				 	 <button id="showMore" class="am-btn am-btn-xs am-radius am-btn-line more"><span>显示更多</span><span class="hide">收起</span></button>
+				 	 	<script>
+				 	 		$("#showMore").click(function() {
+				 	 			$(".select").toggleClass('select-more');
+				 	 			$(this).find("span").toggleClass("hide");
+				 	 		});
+				 	 			
+				 	 		 
+
+				 	 		$(".area-contianer li").each(function() {
+				 	 			$(this).click(function() {
+				 	 				$(this).addClass("on").siblings().removeClass("on"); 
+				 	 			});
+				 	 		});
+				 	 		$(".inputNum").click(function() {
+				 	 			$(this).removeClass("on").siblings("ul").find("li").removeClass("on")
+				 	 		});
+				 	 	</script>
+				 </div><!-- /area-contianer -->  
+				
+				 <div class="am-g am-g-collapse boxContent">
+				 	<div class="am-u-sm-8 border-right-gray"> 
+				 		<div class="project">
+				 			<div class="project-img">
+				 				<a href="#"><img src="../../assets/images/project.jpg" alt=""></a>
+				 			</div>
+				 			<div class="project-info">
+				 				<h4>金地集团华南区域</h4>
+				 				<p>项目类型：项目类型项目类型项目类型项目类型项目类型</p>
+				 				<p class="desc">项目描述：项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目</p>
+				 				<p><b>正在招募：291项目</b>历史招标：3条</p>
+				 			</div>
+				 		</div><!-- /project -->
+
+				 		<div class="project">
+				 			<div class="project-img">
+				 				<a href="#"><img src="../../assets/images/project.jpg" alt=""></a>
+				 			</div>
+				 			<div class="project-info">
+				 				<h4>金地集团华南区域钢质PVC覆膜入户门工程供应商招募</h4>
+				 				<p>项目类型：项目类型项目类型项目类型项目类型项目类型</p>
+				 				<p class="desc">项目描述：项目描述项目描述项目描述</p>
+				 				<p>历史招标：3条</p>
+				 				<p><a href="#" class="am-btn am-radius am-btn-primary am-btn-radius">立即报名</a></p>
+				 			</div>
+				 		</div><!-- /project -->    
+				 	</div><!-- /am-u-sm-8 -->
+				 	<div class="am-u-sm-4"> 
+				 		<div class="boxStyle">
+				 		<h4 class="box-title box-title-primary">最新招标</h4>
+				 			<div class="boxContent"> 
+								<ul class="articlelist articlelist-doublue fz12">
+									<li>
+										<a href="#">青岛金质达钢结构工程有限公司 <small>铝合金门窗工程</small></a>
+										<div class="date">
+											<span>10-10 截止</span>
+											<b>500人关注</b>
+										</div>
+									</li>  
+									<li>
+										<a href="#">青岛金质达钢结构工程有限公司 <small>铝合金门窗工程</small></a>
+										<div class="date">
+											<span>10-10 截止</span>
+											<b>500人关注</b>
+										</div>
+									</li>  
+									<li>
+										<a href="#">青岛金质达钢结构工程有限公司 <small>铝合金门窗工程</small></a>
+										<div class="date">
+											<span>10-10 截止</span>
+											<b>500人关注</b>
+										</div>
+									</li>  
+									<li>
+										<a href="#">青岛金质达钢结构工程有限公司 <small>铝合金门窗工程</small></a>
+										<div class="date">
+											<span>10-10 截止</span>
+											<b>500人关注</b>
+										</div>
+									</li>     
+								</ul> 
+				 			</div><!-- /boxContent -->
+				 		</div><!-- /boxStyle --> 
+				 	</div><!-- /am-u-sm-4 -->
+				 </div><!-- /am-g --> 
+		</div><!-- /boxStyle -->
+		<div class="loading">
+				 	<a href="#"><i class="am-icon-spinner am-icon-pulse"></i> 点击加载更多</a>
+				 </div><!-- /loading -->
+	</div><!-- /am-container -->
+  
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+			
+			<div class="am-modal " tabindex="-1" id="selectCategory">
+				<div class="am-modal-dialog">
+					<div class="am-modal-hd">选择分类
+						<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+					</div>
+					<div class="am-modal-bd"> 
+						<div class="am-g selectC">
+							<div class="am-u-sm-4">
+								<div class="catSel">
+									<span title="设计/造价/检测/服务/顾问">设计/造价/检测/服务/顾问</span>
+									<span title="建筑项目工程">建筑项目工程</span>
+									<span title="建筑材料">建筑材料</span>
+									<span title="建筑机械">建筑机械</span>
+									<span title="建筑设备">建筑设备</span>
+									<span title="建筑项目工程">建筑项目工程</span>
+									<span title="建筑材料">建筑材料</span>
+									<span title="建筑机械">建筑机械</span>
+									<span title="建筑设备">建筑设备</span>
+									<span title="建筑项目工程">建筑项目工程</span>
+									<span title="建筑材料">建筑材料</span>
+									<span title="建筑机械">建筑机械</span>
+									<span title="建筑设备">建筑设备</span>
+								</div>
+							</div><!-- /am-u-sm-4 -->
+							<div class="am-u-sm-4">
+								<div class="catSel">
+									<span title="建筑设计">建筑设计</span> 
+								</div>
+							</div><!-- /am-u-sm-4 --> 
+							<div class="am-u-sm-4">
+								<div class="catSel">
+									<span title="景观设计">景观设计</span>
+									<span title="精装修设计">精装修设计</span>
+									<span title="施工图设计">施工图设计</span> 
+								</div>
+							</div><!-- /am-u-sm-4 -->
+							<div class="am-u-sm-12">
+								<div class="category-selected">
+									<label>已经选择分类：</label>
+									<span class="am-badge am-badge-primary am-text-sm">景观设计 <a href="#" class="am-close">&times;</a></span>
+									<span class="am-badge am-badge-primary am-text-sm">精装修设计 <a href="#" class="am-close">&times;</a></span>
+									<span class="am-badge am-badge-primary am-text-sm">施工图设计 <a href="#" class="am-close">&times;</a></span>
+								</div>
+							</div><!-- /am-u-sm-12 -->
+							<div class="am-u-sm-12 am-text-right">
+								<hr>
+								<button class="am-btn am-radius am-btn-primary" >确定</button>
+								<button class="am-btn am-radius am-btn-default" data-am-modal-close>取消</button>
+							</div><!-- /am-u-sm-12 -->
+						</div><!-- /am-g -->
+					</div>
+				</div>
+			</div>
+		</body>
+		</html>

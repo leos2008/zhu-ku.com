@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../../assets/plug/jquery.js"></script>    
+	<script src="../../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="../../../assets/plug/dataTables/amazeui.datatables.js"></script> 
+
+	<link rel="stylesheet" href="../../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+ 
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-3">
+					<div class="indexlogo"><img src="../../../assets/images/logo.png" alt=""></div>
+				</div><!-- /am-u-sm-3 -->
+				<div class="am-u-sm-9">
+					<div class="header-nav-radius"> 
+						<ul class="nav">
+							<li><a href="#">工作台</a></li>
+							<li class="on"><a href="#">采购管理</a></li>
+							<li><a href="#">供应商管理</a></li>
+							<li><a href="#">招标管理</a></li>
+							<li><a href="#">基础设置</a></li>
+						</ul>
+					</div><!-- /header-nav-radius -->
+				</div><!-- /am-u-sm-9 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con --> 
+
+	<hr>
+	<div class="am-container">
+		<div class="am-g">
+			<div class="am-u-sm-3">
+				<dl class="leftMenu"> 
+					<dd><a href="#">我的需求单</a></dd>
+					<dd class="on"><a href="#">我的采购单</a></dd>   
+				</dl>
+			</div><!-- /am-u-sm-3 -->
+
+			<div class="am-u-sm-9">
+				<div class="boxStyle"> 
+					<h4 class="box-title box-title-primary">我的采购单>采购单详情</h4>
+					<div class="boxContent">  
+						<form class="am-form"> 
+							<div class="am-u-sm-12">
+								<div class="my-form-text">
+									<label class="my-form-label">项目名称：</label>
+									<div class="my-form-info">
+										<div class="am-u-sm-12">
+											项目名称项目名称项目名称项目名称项目名称项目名称
+										</div> 
+									</div>
+								</div> 
+								<div class="my-form-text">
+									<label class="my-form-label">编号：</label>
+									<div class="my-form-info">
+										<div class="am-u-sm-12">
+											76734531221312312
+										</div> 
+									</div>
+								</div> 
+							</div><!-- /am-u-sm-12 -->
+						</form>
+						<hr>
+						<div class="tableContent"> 
+							<div class="toolbar">
+								<div class="am-fl am-padding-right">
+									<a href="#" class="am-btn am-btn-xs am-radius am-btn-success"><i class="am-icon-upload"></i> 导出Excel</a> 
+								</div> 
+								<div class="am-fr am-padding-top-xs">
+									总计：<b class="am-text-danger">￥ 98321312.00</b>
+								</div><!-- /am-fr -->
+							</div>
+							<div class="tableScroll"> 
+							<table class="am-table am-table-bordered am-table-hover" id="example">
+								<thead>
+									<tr>
+										<th><div class="checkbox"><label><input type="checkbox"></label></div></th>
+										<th>序号</th>
+										<th>物资名称</th>
+										<th>品牌</th>
+										<th>规格型号</th>
+										<th>单位</th>
+										<th>数量</th>
+										<th>单价（含税/元）</th>	
+										<th>合计（含税/元）</th> 
+									</tr>
+								</thead>
+								<tbody> 
+									<tr>
+										<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+										<td>1</td>
+										<td>乳胶漆</td>
+										<td>巴塞罗那</td>
+										<td>20181111120000</td>
+										<td>m2</td>
+										<td>9999</td>
+										<td>￥999.00</td>
+										<td>￥999.00</td> 
+									</tr> 
+									<tr>
+										<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+										<td>1</td>
+										<td>乳胶漆</td>
+										<td>巴塞罗那</td>
+										<td>20181111120000</td>
+										<td>m2</td>
+										<td>9999</td>
+										<td>￥999.00</td>
+										<td>￥999.00</td> 
+									</tr>
+									<tr>
+										<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+										<td>1</td>
+										<td>乳胶漆</td>
+										<td>巴塞罗那</td>
+										<td>20181111120000</td>
+										<td>m2</td>
+										<td>9999</td>
+										<td>￥999.00</td>
+										<td>￥999.00</td> 
+									</tr>
+									<tr>
+										<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+										<td>1</td>
+										<td>乳胶漆</td>
+										<td>巴塞罗那</td>
+										<td>20181111120000</td>
+										<td>m2</td>
+										<td>9999</td>
+										<td>￥999.00</td>
+										<td>￥999.00</td> 
+									</tr>
+									<tr>
+										<td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+										<td>1</td>
+										<td>乳胶漆</td>
+										<td>巴塞罗那</td>
+										<td>20181111120000</td>
+										<td>m2</td>
+										<td>9999</td>
+										<td>￥999.00</td>
+										<td>￥999.00</td> 
+									</tr>
+								</tbody>
+							</table>
+							</div>
+							<script>
+								$(function() {
+									$('#example').DataTable({
+										searching: false,
+										fixedHeader: true,
+										"lengthChange": false,
+										//"ordering": false  默认排序
+										//"columnDefs": [    默认第一行不排序
+										//{ "orderable": false, "targets": 0 }
+										//]
+										"scrollX":true
+									});
+								});
+							</script>
+							<div class="am-alert am-alert-gray am-text-right">
+								<div class="am-fl am-padding-top-xs">已选择 <span class="am-text-danger">4</span> 项</div>
+								<div class="am-fr">
+									总计：<span class="am-text-danger">￥</span> <span class="am-text-danger am-text-xl">98321312.00</span>元
+								</div>
+							</div>
+						</div><!-- /tableContent -->
+					</div><!-- /boxContent -->
+				</div><!-- /boxStyle --> 
+			</div><!-- /am-u-sm-9 --> 
+		</div><!-- /am-g --> 
+	</div><!-- /am-container -->
+
+
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+
+		</body>
+		</html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../assets/plug/jquery.js"></script>    
+	<script src="../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="assets/plug/dataTables/amazeui.datatables.js"></script> 
+	
+	<link rel="stylesheet" href="../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<div class="indexlogo"><img src="../../assets/images/logo.png" alt=""></div>
+					<div class="pagetitle"><!-- 我的 --></div>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6">
+					<div class="header-con-search">
+						<div class="keys">
+							<a href="#" class="active">招募</a>
+							<a href="#">招标</a>
+							<a href="#">找需求</a>
+							<a href="#">找供应</a>   
+						</div><!-- /keys -->
+						<div class="am-input-group am-input-group-sm">
+							<input type="text" placeholder="请输入搜索内容" class="am-form-field">
+							<span class="am-input-group-btn">
+								<button class="am-btn am-radius am-btn-primary" type="button">搜索</button>
+							</span>
+						</div><!-- /am-input-group  -->
+					</div><!-- /header-con-search -->
+					<div class="header-con-qr am-text-right">
+						<img src="../../assets/images/qrcode.jpg" alt="">
+					</div>
+				</div><!-- /am-u-sm-6 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con -->
+	<div class="header-nav">
+		<div class="am-container"> 
+			<ul class="nav"> 
+				<li>
+					<div class="category-search" ><i class="am-icon-list"></i><span>分类查找</span>
+						<div id="category-menu" class="category-menu">
+							<div class="category-level-1">
+								<ul>
+									<li>
+										<span>设计/造价/检测/服务/顾问
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑项目工程
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a> 
+												</p> 
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑材料
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">施工图设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑机械
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">立面设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑设备
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">钢结构专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>内部装修
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑劳务公司（班组）
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>  
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>营销服务，物料及其他
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">钢结构专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+								</ul>
+							</div> <!-- /category-level-1 -->
+						</div><!-- /category-menu --> 
+					</div><!-- /category-search -->
+				</li> 
+				<li><a href="首页.html">首页</a></li> 
+				<li><a href="找需求.html">找需求</a></li> 
+				<li class="on"><a href="供应方.html">找供应</a></li> 
+				<li><a href="招募.html">招募</a></li> 
+				<li><a href="#">招标</a></li> 
+				<li><a href="#">管理</a></li> 
+				<li><a href="../31-金融.html">金融</a></li> 
+				<li><a href="#">人才</a></li> 
+				<li><a href="#">资料</a></li> 
+			</ul>  
+		</div><!-- /am-container -->
+	</div><!-- /header-nav --> 
+	
+	<div class="banner">
+		<div class="am-container">
+
+			<div class="category-menu">
+				<div class="category-level-1">
+					<ul>
+						<li>
+							<span>设计/造价/检测/服务/顾问
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>
+										<a href="#">精装修设计</a>
+										<a href="#">规划设计</a>
+										<a href="#">施工图设计</a>
+										<a href="#">方案设计</a>
+										<a href="#">立面设计</a>
+										<a href="#">商业包装设计</a>
+										<a href="#">与施工施工图审查照明专业设计</a>
+										<a href="#">钢结构专业设计</a>
+										<a href="#">供电专业设计</a>
+									</p>
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>
+										<a href="#">精装修设计</a>
+										<a href="#">规划设计</a>
+										<a href="#">施工图设计</a>
+										<a href="#">方案设计</a>
+										<a href="#">立面设计</a>
+										<a href="#">商业包装设计</a>
+										<a href="#">与施工施工图审查照明专业设计</a>
+										<a href="#">钢结构专业设计</a>
+										<a href="#">供电专业设计</a>
+									</p>
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>
+										<a href="#">精装修设计</a>
+										<a href="#">规划设计</a>
+										<a href="#">施工图设计</a>
+										<a href="#">方案设计</a>
+										<a href="#">立面设计</a>
+										<a href="#">商业包装设计</a>
+										<a href="#">与施工施工图审查照明专业设计</a>
+										<a href="#">钢结构专业设计</a>
+										<a href="#">供电专业设计</a>
+									</p>
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>
+										<a href="#">精装修设计</a>
+										<a href="#">规划设计</a>
+										<a href="#">施工图设计</a>
+										<a href="#">方案设计</a>
+										<a href="#">立面设计</a>
+										<a href="#">商业包装设计</a>
+										<a href="#">与施工施工图审查照明专业设计</a>
+										<a href="#">钢结构专业设计</a>
+										<a href="#">供电专业设计</a>
+									</p>
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>
+										<a href="#">精装修设计</a>
+										<a href="#">规划设计</a>
+										<a href="#">施工图设计</a>
+										<a href="#">方案设计</a>
+										<a href="#">立面设计</a>
+										<a href="#">商业包装设计</a>
+										<a href="#">与施工施工图审查照明专业设计</a>
+										<a href="#">钢结构专业设计</a>
+										<a href="#">供电专业设计</a>
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>建筑项目工程
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a> 
+									</p> 
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>建筑材料
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">施工图设计</a> 
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">与施工施工图审查照明专业设计</a> 
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>建筑机械
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p>  
+										<a href="#">立面设计</a> 
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">供电专业设计</a>
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>建筑设备
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">精装修设计</a> 
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">钢结构专业设计</a> 
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>内部装修
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">与施工施工图审查照明专业设计</a> 
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">供电专业设计</a>
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>建筑劳务公司（班组）
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p>
+										<a href="#">景观设计</a>  
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">供电专业设计</a>
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+						<li>
+							<span>营销服务，物料及其他
+								<div class="category-level-2">
+									<h4>建筑设计</h4>
+									<p>  
+										<a href="#">钢结构专业设计</a> 
+									</p>
+									<h4>建筑设计</h4>
+									<p> 
+										<a href="#">精装修设计</a> 
+									</p>
+								</div><!-- /category-level-2 -->
+								<i class="am-icon-angle-right"></i>
+							</span>
+						</li> 
+					</ul>
+				</div> <!-- /category-level-1 -->
+			</div><!-- /category-menu -->
+			
+		</div><!-- /am-container -->
+		<div class="banner-pointer"><ul><li class="on">1</li><li>2</li></ul></div>
+		<div class="banner-img">
+			<ul>
+				<li><img src="../../assets/images/banner1.png" alt=""></li>
+				<li style="display: none;"><img src="../../assets/images/banner2.png" alt=""></li>
+			</ul> 
+		</div> 
+		<script>
+		//banner初始化
+		jQuery(".banner").slide({titCell:".banner-pointer ul",mainCell:".banner-img ul",autoPlay:true,delayTime:1000,autoPage:true,}); 
+		</script>
+	</div><!-- /banner 顶部广告条-->
+
+	<div class="boxStyle">
+		<div class="am-container">
+			名企招募共 1357 项，供应方已报名 24680 次
+		</div><!-- /am-container -->
+	</div><!-- /boxStyle -->
+ 
+	<div class="am-container">
+		<div class="am-g">
+			<div class="am-u-sm-3">
+				<div class="boxStyle gyf-top">
+				<h4 class="box-title">需求方榜单</h4>
+				<div class="boxContent">
+					<ul class="articlelist fz12">
+						<li><a href="#" class="am-text-truncate">每个人都有一个死角，自己走不出来，别人也闯不进去。</a></li>
+						<li><a href="#" class="am-text-truncate">我把最深沉的秘密放在那里。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+					</ul><!-- /articlelist -->
+				</div><!-- /boxContent -->
+				</div><!-- /boxStyle -->
+			</div><!-- /am-u-sm-3 -->
+			<div class="am-u-sm-3">
+				<div class="boxStyle gyf-top">
+				<h4 class="box-title">供应方榜单</h4>
+				<div class="boxContent">
+					<ul class="articlelist fz12">
+						<li><a href="#" class="am-text-truncate">每个人都有一个死角，自己走不出来，别人也闯不进去。</a></li>
+						<li><a href="#" class="am-text-truncate">我把最深沉的秘密放在那里。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+					</ul><!-- /articlelist -->
+				</div><!-- /boxContent -->
+				</div><!-- /boxStyle -->
+			</div><!-- /am-u-sm-3 -->
+			<div class="am-u-sm-3">
+				<div class="boxStyle gyf-top">
+				<h4 class="box-title">常见问题</h4>
+				<div class="boxContent">
+					<ul class="articlelist fz12">
+						<li><a href="#" class="am-text-truncate">每个人都有一个死角，自己走不出来，别人也闯不进去。</a></li>
+						<li><a href="#" class="am-text-truncate">我把最深沉的秘密放在那里。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+						<li><a href="#" class="am-text-truncate">你不懂我，我不怪你。</a></li>
+						<li><a href="#" class="am-text-truncate">每个人都有一道伤口，或深或浅，盖上布，以为不存在。</a></li>
+					</ul><!-- /articlelist -->
+				</div><!-- /boxContent -->
+				</div><!-- /boxStyle -->
+			</div><!-- /am-u-sm-3 -->
+			<div class="am-u-sm-3">
+				<div class="boxStyle gyf-top">
+				<h4 class="box-title">我是供应方</h4>
+				<div class="boxContent">
+					<a href="#" class="am-btn am-radius am-btn-block am-btn-lg am-btn-primary sendinfo">我要发布</a>
+				</div><!-- /boxContent -->
+				</div><!-- /boxStyle -->
+			</div><!-- /am-u-sm-3 -->
+		</div><!-- /am-g -->
+	
+		<div class="am-g">
+			<div class="am-u-sm-9">	
+
+				<div class="boxStyle-tabs boxStyle-tabs-blue">
+								<!-- orange，blue，purple，green对应不同颜色的标题
+								<div class="boxStyle-tabs boxStyle-tabs-blue">
+								<div class="boxStyle-tabs boxStyle-tabs-purple">
+								<div class="boxStyle-tabs boxStyle-tabs-green">
+								-->
+								<h4>开发配套</h4>
+								<div class="boxStyle-tabs-menu">
+									<ul>
+										<li class="on"><a href="javascript:;">智能化工程</a></li>
+										<li class=""><a href="javascript:;">弱电工程</a></li>
+										<li class=""><a href="javascript:;">泛光照明工程</a></li>
+										<li class=""><a href="javascript:;">机电总包工程</a></li>
+									</ul>
+								</div><!-- /boxStyle-tabs-menu -->
+								<div class="boxStyle-tabs-content">
+									<div class="innnerTabs">
+										<a href="javascript:;">热门</a>
+										<a href="javascript:;">万科</a>
+										<a href="javascript:;">绿地</a>
+										<a href="javascript:;">华润</a>
+										<a href="javascript:;">保利</a>
+									</div>
+									<ul>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+									</ul>
+								</div><!-- /boxStyle-tabs-content --> 
+							</div><!-- /boxStyle -->
+
+				<div class="boxStyle-tabs boxStyle-tabs-orange">
+								<!-- orange，blue，purple，green对应不同颜色的标题
+								<div class="boxStyle-tabs boxStyle-tabs-blue">
+								<div class="boxStyle-tabs boxStyle-tabs-purple">
+								<div class="boxStyle-tabs boxStyle-tabs-green">
+								-->
+								<h4>开发配套</h4>
+								<div class="boxStyle-tabs-menu">
+									<ul>
+										<li class="on"><a href="javascript:;">智能化工程</a></li>
+										<li class=""><a href="javascript:;">弱电工程</a></li>
+										<li class=""><a href="javascript:;">泛光照明工程</a></li>
+										<li class=""><a href="javascript:;">机电总包工程</a></li>
+									</ul>
+								</div><!-- /boxStyle-tabs-menu -->
+								<div class="boxStyle-tabs-content">
+									<div class="innnerTabs">
+										<a href="javascript:;">热门</a>
+										<a href="javascript:;">万科</a>
+										<a href="javascript:;">绿地</a>
+										<a href="javascript:;">华润</a>
+										<a href="javascript:;">保利</a>
+									</div>
+									<ul>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+									</ul>
+								</div><!-- /boxStyle-tabs-content --> 
+				</div><!-- /boxStyle -->
+							
+				<div class="boxStyle-tabs boxStyle-tabs-purple">
+								<!-- orange，blue，purple，green对应不同颜色的标题
+								<div class="boxStyle-tabs boxStyle-tabs-blue">
+								<div class="boxStyle-tabs boxStyle-tabs-purple">
+								<div class="boxStyle-tabs boxStyle-tabs-green">
+								-->
+								<h4>开发配套</h4>
+								<div class="boxStyle-tabs-menu">
+									<ul>
+										<li class="on"><a href="javascript:;">智能化工程</a></li>
+										<li class=""><a href="javascript:;">弱电工程</a></li>
+										<li class=""><a href="javascript:;">泛光照明工程</a></li>
+										<li class=""><a href="javascript:;">机电总包工程</a></li>
+									</ul>
+								</div><!-- /boxStyle-tabs-menu -->
+								<div class="boxStyle-tabs-content">
+									<div class="innnerTabs">
+										<a href="javascript:;">热门</a>
+										<a href="javascript:;">万科</a>
+										<a href="javascript:;">绿地</a>
+										<a href="javascript:;">华润</a>
+										<a href="javascript:;">保利</a>
+									</div>
+									<ul>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+										<li>
+											<a href="#">四川灵通电讯有限公司</a><a href="#">[成都]</a>
+											<p>机电总包工程，可视对讲，弱电工程</p>
+											<p>注册资本：6800万</p>
+										</li>
+									</ul>
+								</div><!-- /boxStyle-tabs-content --> 
+				</div><!-- /boxStyle -->		
+				
+				<div class="boxStyle-tabs boxStyle-tabs-green">
+								<!-- orange，blue，purple，green对应不同颜色的标题
+								<div class="boxStyle-tabs boxStyle-tabs-blue">
+								<div class="boxStyle-tabs boxStyle-tabs-purple">
+								<div class="boxStyle-tabs boxStyle-tabs-green">
+								-->
+								<h4>开发配套</h4>
+								<div class="boxStyle-tabs-menu">
+									<ul>
+										<li class="on"><a href="javascript:;">智能化工程</a></li>
+										<li class=""><a href="javascript:;">弱电工程</a></li>
+										<li class=""><a href="javascript:;">泛光照明工程</a></li>
+										<li class=""><a href="javascript:;">机电总包工程</a></li>
+									</ul>
+								</div><!-- /boxStyle-tabs-menu -->
+								<div class="boxStyle-tabs-content">
+									<div class="innnerTabs">
+										<a href="javascript:;">热门</a>
+										<a href="javascript:;">万科</a>
+										<a href="javascript:;">绿地</a>
+										<a href="javascript:;">华润</a>
+										<a href="javascript:;">保利</a>
+									</div>
+									<div class="enterprise">
+										<div class="ep-logo"><a href="#"><img src="../../assets/images/enterprise.jpg" alt=""></a></div><!-- /ep-logo -->
+										<div class="ep-info">
+											<h1><a href="#">青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司</a></h1>
+											<!-- <h2>小标题</h2> -->
+											<p>青岛海尔家居集成股份有限公司  </p>
+										</div><!-- /ep-info --> 
+									</div><!-- /enterprise -->
+									<div class="enterprise">
+										<div class="ep-logo"><a href="#"><img src="../../assets/images/enterprise.jpg" alt=""></a></div><!-- /ep-logo -->
+										<div class="ep-info">
+											<h1><a href="#">青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司</a></h1>
+											<!-- <h2>小标题</h2> -->
+											<p>青岛海尔家居集成股份有限公司  </p>
+										</div><!-- /ep-info --> 
+									</div><!-- /enterprise -->
+									<div class="enterprise">
+										<div class="ep-logo"><a href="#"><img src="../../assets/images/enterprise.jpg" alt=""></a></div><!-- /ep-logo -->
+										<div class="ep-info">
+											<h1><a href="#">青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司</a></h1>
+											<!-- <h2>小标题</h2> -->
+											<p>青岛海尔家居集成股份有限公司  </p>
+										</div><!-- /ep-info --> 
+									</div><!-- /enterprise -->
+									<div class="enterprise">
+										<div class="ep-logo"><a href="#"><img src="../../assets/images/enterprise.jpg" alt=""></a></div><!-- /ep-logo -->
+										<div class="ep-info">
+											<h1><a href="#">青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司青岛海尔家居集成股份有限公司</a></h1>
+											<!-- <h2>小标题</h2> -->
+											<p>青岛海尔家居集成股份有限公司  </p>
+										</div><!-- /ep-info --> 
+									</div><!-- /enterprise -->
+									<div class="loading">
+										<a href="#"><i class="am-icon-spinner am-icon-pulse"></i> 点击加载更多</a>
+									</div>
+								</div><!-- /boxStyle-tabs-content --> 
+				</div><!-- /boxStyle -->	
+
+				<script>
+					$(".boxStyle-tabs-menu li").each(function() {
+						$(this).click(function() {
+							$(this).addClass('on');
+							$(this).siblings().removeClass('on');
+						});
+					});
+				</script>	
+ 			</div><!-- /am-u-sm-9 -->
+ 			<div class="am-u-sm-3"> 
+ 				<div class="boxStyle">
+ 				<h4 class="box-title box-title-primary">最新入库方</h4> 
+ 				<div class="boxContent">  
+ 					<ul class="articlelist-multirow fz12">
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 						<li class="am-g-collapse">
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">常州市长扬风机有限公司</a></div>
+ 							<div class="am-u-sm-2 am-text-center">入库</div>
+ 							<div class="am-u-sm-5"><a href="#" class="am-text-truncate">江苏沃因思能源管理科技有限公司</a></div>
+ 						</li> 
+ 					</ul><!-- /articlelist-multirow --> 
+ 				</div><!-- /boxContent -->
+ 				</div><!-- /boxStyle --> 
+
+ 				<div class="boxStyle">
+ 				<h4 class="box-title box-title-primary">入库排行榜</h4> 
+ 				<div class="boxContent"> 
+	 				<ul class="articlelist-topten topten-full">
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 					<li><a href="#" class="am-text-truncate">登封市徐庄镇田家沟至旧寨沟农村公路建设项目招标公告</a></li>
+	 				</ul><!-- /articlelist-multirow --> 
+	 			</div><!-- /boxContent -->	
+ 				</div><!-- /boxStyle --> 
+ 			</div><!-- /am-u-sm-3 -->
+ 		</div><!-- /am-g -->
+	</div><!-- /am-container -->
+ 
+  
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+			
+		</body>
+		</html>

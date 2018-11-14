@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../assets/plug/jquery.js"></script>    
+	<script src="../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="assets/plug/dataTables/amazeui.datatables.js"></script> 
+	
+	<link rel="stylesheet" href="../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<div class="indexlogo"><img src="../../assets/images/logo.png" alt=""></div>
+					<div class="pagetitle"><!-- 我的 --></div>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6">
+					<div class="header-con-search">
+						<div class="keys">
+							<a href="#" class="active">招募</a>
+							<a href="#">招标</a>
+							<a href="#">找需求</a>
+							<a href="#">找供应</a>   
+						</div><!-- /keys -->
+						<div class="am-input-group am-input-group-sm">
+							<input type="text" placeholder="请输入搜索内容" class="am-form-field">
+							<span class="am-input-group-btn">
+								<button class="am-btn am-radius am-btn-primary" type="button">搜索</button>
+							</span>
+						</div><!-- /am-input-group  -->
+					</div><!-- /header-con-search -->
+					<div class="header-con-qr am-text-right">
+						<img src="../../assets/images/qrcode.jpg" alt="">
+					</div>
+				</div><!-- /am-u-sm-6 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div><!-- /header-con -->
+	<div class="header-nav">
+		<div class="am-container"> 
+			<ul class="nav"> 
+				<li>
+					<div class="category-search" ><i class="am-icon-list"></i><span>分类查找</span>
+						<div id="category-menu" class="category-menu">
+							<div class="category-level-1">
+								<ul>
+									<li>
+										<span>设计/造价/检测/服务/顾问
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>
+													<a href="#">精装修设计</a>
+													<a href="#">规划设计</a>
+													<a href="#">施工图设计</a>
+													<a href="#">方案设计</a>
+													<a href="#">立面设计</a>
+													<a href="#">商业包装设计</a>
+													<a href="#">与施工施工图审查照明专业设计</a>
+													<a href="#">钢结构专业设计</a>
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑项目工程
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a> 
+												</p> 
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑材料
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">施工图设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑机械
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">立面设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑设备
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">钢结构专业设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>内部装修
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">与施工施工图审查照明专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>建筑劳务公司（班组）
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>
+													<a href="#">景观设计</a>  
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">供电专业设计</a>
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+									<li>
+										<span>营销服务，物料及其他
+											<div class="category-level-2">
+												<h4>建筑设计</h4>
+												<p>  
+													<a href="#">钢结构专业设计</a> 
+												</p>
+												<h4>建筑设计</h4>
+												<p> 
+													<a href="#">精装修设计</a> 
+												</p>
+											</div><!-- /category-level-2 -->
+											<i class="am-icon-angle-right"></i>
+										</span>
+									</li> 
+								</ul>
+							</div> <!-- /category-level-1 -->
+						</div><!-- /category-menu --> 
+					</div><!-- /category-search -->
+				</li> 
+				<li><a href="首页.html">首页</a></li> 
+				<li><a href="找需求.html">找需求</a></li> 
+				<li><a href="供应方.html">找供应</a></li> 
+				<li><a href="招募.html">招募</a></li> 
+				<li class="on"><a href="../35-招标.html">招标</a></li> 
+				<li><a href="#">管理</a></li> 
+				<li><a href="../31-金融.html">金融</a></li> 
+				<li><a href="#">人才</a></li> 
+				<li><a href="#">资料</a></li> 
+			</ul>  
+		</div><!-- /am-container -->
+	</div><!-- /header-nav --> 
+	
+	<div class="am-g">
+		<div class="am-container">
+			<div class="am-u-sm-12">
+				<img class="am-img-responsive" src="../../assets/images/page-banner.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="am-container mt20">
+		<div class="am-u-sm-9">
+			<div class="boxStyle">  
+				<div class="boxContent">
+					<div class="enterprise-detail">
+						<div class="am-g border-bottom-gray">
+							<h1>农村服务</h1> 
+							<div class="am-u-sm-6">
+								<p>项目所在地: [北京市 北京市 ]</p>
+								<p>公司所在区域：北京市 北京市</p>
+							</div>
+							<div class="am-u-sm-6">
+								<p>注册资本: 100万到1000万</p>
+								<p>报名截止日期: 2018-10-23</p>
+							</div> 
+						</div>
+							 	
+							<h2>招标范围 </h2>
+							<p>一、招标条件<br>
+								开发区嘉和广场西侧道路及广场改造工程，资金来源为财政资金，招标人为河南三门峡经济开发区城市建设管理局，招标代理机构为河南诚安工程管理咨询有限公司。项目已具备招标条件，现对该项目进行公开招标。<br>
+								二、项目概况与招标范围<br>
+								1、招标编号：三开财采[2017]31号<br>
+								三公资建【2017】147号<br>
+								2、项目概况：<br>
+								开发区嘉和广场西侧道路及广场改造。<br>
+								3、招标范围：施工图纸和工程量清单所标示的全部内容。<br>
+								4、标段划分：本项目划分一个标段。<br>
+								5、工程预算：约100万元<br>
+								6、质量要求：达到国家质量验收规范合格标准。<br>
+								7、计划工期：50日历天</p>
+							
+							<h2>报名条件详细描述 </h2>
+							<p>注册资本：100万以下</p> 
+							
+							<h2>报名时需同时完善和提交的资料 </h2>
+							<p>三、投标人资格要求<br>
+								1、本次招标要求投标人须具备独立法人资格，持有效期内的营业执照和有效期内的企业安全生产许可证。<br>
+								2、投标人具有市政公用工程施工总承包叁级及以上资质；<br>
+								3、拟任项目经理应具备市政专业贰级及以上注册建造师资格、安全生产考核合格证、身份证及单位养老保险缴费证明，并无在建项目。<br>
+								4、技术负责人应具有市政专业中级及以上技术职称、身份证及单位养老保险缴费证明。<br>
+								5、投标人应提供企业所在地或项目所在地检察机关出具的在有效期内的无行贿犯罪档案查询结果告知函（查询对象：企业、法定代表人、拟派项目经理）<br>
+								6、企业注册地工商管理部门提供的无商业贿赂及无不正当竞争行为的查询证明（如工商行政管理部门不提供的，企业可以自行出具本单位无商业贿赂及无不正当竞争行为的承诺书）。<br>
+								7、本次招标不接受联合体。<br>
+								8、本次招标实行资格后审，资格审查的具体要求见招标文件。<br>
+								四、投标报名及招标文件的获取方式：<br>
+								1、报名时间：2017年7月27日至2017年8月2日18时00分。<br>
+								2、报名方法：本项目只接受网上报名，不接受其它形式报名。潜在投标人报名需凭CA数字证书通过三门峡市公共资源交易中心网（网址：www.smxgzjy.org）“登录业务系统”入口进入交易系统进行报名。具体操作请查看以下链接：<br>
+								链接地址：http://www.smxgzjy.org/bwstb/9783.jhtml<br>
+								办理CA证书：http://www.smxgzjy.org/bwstb/23330.jhtml<br>
+								3、报名资料的提交<br>
+								本项目实行资格后审，审查内容以投标截止时间24小时前在三门峡市公共资源交易投标人（供应商）诚信库中提交并验证通过的信息为准。规定时间外登记或更改的信息不作为评标依据。诚信库上传信息必须内容齐全，真实有效，原件扫描件清晰可辨。否则，由此造成应得分而未得分或资格审查不合格等情况的，由投标人承担责任。<br>
+								具体操作详见《三门峡市公共资源交易投标人（供应商）诚信库操作手册》。链接地址：http://www.smxgzjy.org/bwstb/9753.jhtml<br>
+								注：（1）投标人提交的资料，中心将在工作日（8小时）内进行验证工作，请投标人合理安排资料提交时间；<br>
+								（2）为保证投标人提交资料的时效性，在项目开标时间起24小时内，投标人所提交的资料将不予验证。请投报多个项目的投标人合理安排资料提交时间。<br>
+								链接地址：http://www.smxgzjy.org/bwstb/9753.jhtml<br>
+								4、招标文件的获取<br>
+								（1）招标文件出售时间：2017年8月27日至2017年8月31日18时00分。<br>
+								（2）招标文件每标段售价人民币500元，售后不退。<br>
+								（3）缴费方式：转账或电汇支付招标文件费到指定账户。<br>
+								支付账户名称必须和投标人名称一致且已在三门峡市公共资源交易投标人（供应商）诚信库中录入的账户（不支持结算卡支付）<br>
+								（4）汇入账户和帐号：<br>
+								收款单位全称：三门峡市公共资源交易中心<br>
+								账 号：4100 1504 7100 5020 7795-0007<br>
+								开户银行：建行经贸区支行 <br>
+								建行三门峡经贸区支行（外地）<br>
+								（5）潜在投标人网上报名、标书费转账成功后，须在三门峡市公共资源电子化交易系统中，将标书费成功绑定至所投项目和标段，之后方可下载招标文件（招标文件中包含图纸、清单等投标所需一切内容），纸质招标文件、图纸不再出售。具体操作请查看以下链接：<br>
+								链接地址：http://www.smxgzjy.org/bwstb/9784.jhtml<br>
+								注：考虑到人为操作和跨行转账时间延误等因素，招标文件费绑定工作的截止时间为开始报名起至报名截止时间后两天，请投标人尽早进行标书费绑定工作。</p>
+
+							<h2>招标详情 </h2>
+							<p>五、投标保证金<br>
+								1、投标保证金数额：壹万伍仟元整（15000.00元）<br>
+								2、保证金递交的截止时间： 2017年8月31日18时00分。<br>
+								3、保证金汇入帐号和帐户：<br>
+								收款单位全称：三门峡市公共资源交易中心<br>
+								账 号：41001504710050207795-0002<br>
+								开户银行：建行经贸区支行<br>
+								建行三门峡经贸区支行（外地）<br>
+								4、递交形式：<br>
+								（1）投标人的投标保证金必须通过投标人基本账户以转账或电汇的形式缴纳。账户必须是已加入三门峡市公共资源交易投标人或供应商诚信库中录入的账户（不支持结算卡支付）。<br>
+								（2）投标人递交保证金时请注明项目编号：三公资建[2017]147号。<br>
+								（3）投标人缴纳投标保证金后，应在规定的缴纳截止时间前通过三门峡公共资源交易中心电子化交易系统将保证金成功绑定至所投标项目和标段。具体操作请查看以下链接：<br>
+								链接地址：http://www.smxgzjy.org/bwstb/9785.jhtml<br>
+								六、投标文件的递交<br>
+								1、投标文件递交截止时间：2017年8月31日 09时00分。<br>
+								2、开标地点：三门峡市公共资源交易中心五楼开标区。<br>
+								七、其他事项<br>
+								1、投标人应仔细阅读操作手册，在本公告中要求的截止时间前完成网上报名、招标文件费、投标保证金的缴纳和绑定等工作。并充分考虑人为操作和银行异地跨行转账到账的时间等因素，因投标人操作不当或银行到账时间等问题造成的无法报名、无法下载招标文件、无法投标等一切后果，由投标人自行承担。<br>
+								2、投标人递交的资料和投标文件不论中标与否均不予退还。<br>
+								3、招标人不组织投标人踏勘现场。<br>
+								八、发布公告的媒介<br>
+								本次招标公告同时在《中国采购与招标网》、《河南招标采购综合网》、《河南省政府采购网》、《河南诚安工程管理咨询有限公司》、《三门峡市公共资源交易中心》等媒体公开发布。<br>
+								温馨提示：本项目为电子化、无纸化交易项目，开标时不再接受任何纸质资料，为保证您能投标成功，请需仔细阅读招标文件和三门峡市公共资源交易中心官网业务办理指南。<br>
+								九、 联系方式<br>
+								监督机构：河南三门峡经济开发区政府采购管理办公室<br>
+								联系电话：0398-2183293<br>
+								招 标 人：河南三门峡经济开发区城市建设管理局<br>
+								联 系 人： 焦先生<br>
+								电 话：0398-2183256<br>
+								地 址：三门峡市崤山西路43号<br>
+								招标代理机构：河南诚安工程管理咨询有限公司<br>
+								联 系 人：郝彤彤<br>
+								电 话：18639883688<br>
+								地 址：三门峡市崤山西路与山河路交叉口电子城48号</p>
+
+							<hr>
+							<p><a href="#" disabled class="am-btn am-btn-lg am-btn-default am-radius">不可报名</a>　<a href="#" class="am-btn am-btn-lg am-btn-primary am-radius">立即报名</a></p>
+						</div>
+				</div><!-- /boxContent -->
+			</div><!-- /boxStyle --> 
+		</div><!-- /am-u-sm-8 -->
+		<div class="am-u-sm-3">
+			<div class="boxStyle">  
+				<div class="boxContent">
+					<dl>
+						<dt><img class="am-img-responsive" src="../../assets/images/pic.png" alt=""></dt>
+						<dd>常州市长扬风机有限公司 </dd>
+						<dd>正在招募：0项 </dd>
+						<dd>历史招标：1项 </dd>
+						<dd><a href="#">进入企业专区>></a></dd> 
+					</dl><!-- /talents -->
+				</div><!-- /boxContent -->
+			</div><!-- /boxStyle --> 
+
+			<div class="boxStyle"> 
+				<h4 class="box-title">相关招标</h4> 
+				<div class="boxContent">
+					<div class="talents">
+						<div class="talents-avatar">
+						<a href="#"><img src="../../assets/images/pic.png" alt=""></a>
+						</div>
+						<div class="talents-info">
+							<h4><span>敖汉旗惠州办事处振兴社区活动中心建设项目</span></h4>
+							<p>敖汉旗惠州办事处振兴社区活动中心建设项目</p> 
+						</div>
+					</div><!-- /talents -->
+					<div class="talents">
+						<div class="talents-avatar">
+						<a href="#"><img src="../../assets/images/a7.jpg" alt=""></a>
+						</div>
+						<div class="talents-info">
+							<h4><span>敖汉旗惠州办事处振兴社区活动中心建设项目</span></h4>
+							<p>敖汉旗惠州办事处振兴社区活动中心建设项目</p> 
+						</div>
+					</div><!-- /talents -->
+					<div class="talents">
+						<div class="talents-avatar">
+						<a href="#"><img src="../../assets/images/a1.jpg" alt=""></a>
+						</div>
+						<div class="talents-info">
+							<h4><span>敖汉旗惠州办事处振兴社区活动中心建设项目</span></h4>
+							<p>敖汉旗惠州办事处振兴社区活动中心建设项目</p> 
+						</div>
+					</div><!-- /talents -->
+				</div><!-- /boxContent -->
+			</div><!-- /boxStyle --> 
+		</div><!-- /am-u-sm-4 -->
+	</div><!-- /am-container -->
+
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+			
+
+		</body>
+		</html>

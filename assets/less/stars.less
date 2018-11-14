@@ -1,0 +1,165 @@
+@import "myColors.less";
+/*评分星级*/
+.stars{
+	i{font-size: 16px;margin-left: 2px;font-family: fontAwesome;font-style: normal;color: @red-base;position: relative;
+		//&:hover{&:before{content: "\f005"}}
+		&:before{content: "\f005"}
+	}
+	em{font-size: 16px;color: @gray-darker;font-style: normal;padding-left: 10px;}
+}
+.level-100{
+	i{&:before{content: "\f005"}
+		&+i{&:before{content: "\f005"}
+			&+i{&:before{content: "\f005"}
+				&+i{&:before{content: "\f005"}
+					&+i{&:before{content: "\f005"}
+						&:before{content: "\f005"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-90{
+	i{
+		&+i{
+			&+i{
+				&+i{
+					&+i{
+						&:before{content: "\f123"}
+					}
+				}
+			}
+		}
+	} 
+} 
+.level-80{
+	i{
+		&+i{
+			&+i{
+				&+i{
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-70{
+	i{
+		&+i{
+			&+i{
+				&+i{&:before{content: "\f123"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-60{
+	i{
+		&+i{
+			&+i{
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-50{
+	i{
+		&+i{
+			&+i{&:before{content: "\f123"}
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-40{
+	i{
+		&+i{
+			&+i{&:before{content: "\f006"}
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-30{
+	i{
+		&+i{&:before{content: "\f123"}
+			&+i{&:before{content: "\f006"}
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-20{
+	i{
+		&+i{&:before{content: "\f006"}
+			&+i{&:before{content: "\f006"}
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-10{
+	i{&:before{content: "\f123"}
+		&+i{&:before{content: "\f006"}
+			&+i{&:before{content: "\f006"}
+				&+i{&:before{content: "\f006"}
+					&+i{
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+.level-0{
+	i{&:before{content: "\f006"}
+		&+i{&:before{content: "\f006"}
+			&+i{&:before{content: "\f006"}
+				&+i{&:before{content: "\f006"}
+					&+i{&:before{content: "\f006"}
+						&:before{content: "\f006"}
+					}
+				}
+			}
+		}
+	} 
+}
+
+
+//<div class="stars level-0"><i></i><i></i><i></i><i></i><i></i><em>0</em></div>
+//<div class="stars level-10"><i></i><i></i><i></i><i></i><i></i><em>0.5</em></div>
+//<div class="stars level-20"><i></i><i></i><i></i><i></i><i></i><em>1</em></div>
+//<div class="stars level-30"><i></i><i></i><i></i><i></i><i></i><em>1.5</em></div>
+//<div class="stars level-40"><i></i><i></i><i></i><i></i><i></i><em>2</em></div>
+//<div class="stars level-50"><i></i><i></i><i></i><i></i><i></i><em>2.5</em></div>
+//<div class="stars level-60"><i></i><i></i><i></i><i></i><i></i><em>3</em></div>
+//<div class="stars level-70"><i></i><i></i><i></i><i></i><i></i><em>3.5</em></div>
+//<div class="stars level-80"><i></i><i></i><i></i><i></i><i></i><em>4</em></div>
+//<div class="stars level-90"><i></i><i></i><i></i><i></i><i></i><em>4.5</em></div>
+//<div class="stars level-100"><i></i><i></i><i></i><i></i><i></i><em>5</em></div>
