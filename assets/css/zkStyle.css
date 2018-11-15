@@ -2522,9 +2522,18 @@ hr {
 .my-form .my-form-input:after {
   clear: both;
 }
+<<<<<<< HEAD
 .my-form .my-form-input .checkbox label {
   margin-right: 15px;
 }
+=======
+<<<<<<< HEAD
+.my-form .my-form-input .checkbox label {
+  margin-right: 15px;
+}
+=======
+>>>>>>> f3580bbe1e9a0e8f723676d9f4f5a97e7dffe996
+>>>>>>> remotes/gitee-zhuku/master
 .my-form-text {
   margin-bottom: 10px;
   position: relative;
@@ -2939,11 +2948,26 @@ hr {
   margin: 0px;
   list-style: none;
   display: table;
+<<<<<<< HEAD
   font-size: 0px;
 }
 .uploadPic .up li {
   display: table-cell;
   padding-left: 5px;
+=======
+<<<<<<< HEAD
+  font-size: 0px;
+}
+.uploadPic .up li {
+  display: table-cell;
+  padding-left: 5px;
+=======
+}
+.uploadPic .up li {
+  display: table-cell;
+  padding-left: 7px;
+>>>>>>> f3580bbe1e9a0e8f723676d9f4f5a97e7dffe996
+>>>>>>> remotes/gitee-zhuku/master
   position: relative;
 }
 .uploadPic .up li .am-close {
