@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../../assets/css/zkStyle.css"> 
 
 	<script src="../../assets/plug/jquery.js"></script>    
-	<script src="../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	
 	<script src="../../assets/plug/jquery.webui-popover.js"></script> 
 	<script src="../../assets/plug/dataTables/amazeui.datatables.js"></script>  
 
@@ -276,18 +276,13 @@
 	</div><!-- /header-nav -->
 
 
-	<div class="banner"> 
-		<div class="banner-pointer"><ul><li class="on">1</li><li>2</li></ul></div>
-		<div class="banner-img">
-			<ul>
+	<div class="banner">  
+		<div class="am-slider am-slider-default banner-img" data-am-flexslider="{animation: 'fade',directionNav: false, pauseOnAction: false, pauseOnHover: true,slideshowSpeed: 3000,}">
+			<ul class="am-slides">
 				<li><img src="../../assets/images/banner1.png" alt=""></li>
-				<li style="display: none;"><img src="../../assets/images/banner2.png" alt=""></li>
+				<li><img src="../../assets/images/banner2.png" alt=""></li>
 			</ul> 
-		</div> 
-		<script>
-		//banner初始化
-		jQuery(".banner").slide({titCell:".banner-pointer ul",mainCell:".banner-img ul",autoPlay:true,delayTime:1000,autoPage:true,}); 
-		</script>
+		</div>  
 	</div><!-- /banner 顶部广告条-->
 
 	<div class="boxStyle">

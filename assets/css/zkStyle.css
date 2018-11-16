@@ -2050,6 +2050,17 @@ hr {
   right: 20px;
   bottom: 20px;
 }
+.am-slider-default {
+  margin-bottom: 0px;
+}
+.am-slider-default .am-control-nav {
+  bottom: 20px;
+  z-index: 10;
+}
+.am-slider-default .am-control-nav li a {
+  width: 12px;
+  height: 12px;
+}
 .am-btn-line {
   background: white;
   border: 1px solid #0088f0;
