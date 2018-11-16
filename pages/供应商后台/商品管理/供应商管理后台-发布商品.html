@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>ZhuKu</title>
+	<meta name="description" content="">
+	<meta name="keywords" content=""> 
+	
+	<script src="../../../assets/plug/jquery.js"></script>    
+	<script src="../../../assets/plug/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../../../assets/plug/jquery.webui-popover.js"></script> 
+	<script src="../../../assets/plug/dataTables/amazeui.datatables.js"></script> 
+
+	<link rel="stylesheet" href="../../../assets/css/amazeui.css">
+	<link rel="stylesheet" href="../../../assets/plug/dataTables/amazeui.datatables.css">
+	<link rel="stylesheet" href="../../../assets/css/jquery.webui-popover.css">  
+	<link rel="stylesheet" href="../../../assets/css/zkStyle.css"> 
+
+	 <!--[if lte IE 9 ]>  
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/amazeui.ie8polyfill.min.js"></script> 
+	<![endif]-->
+	<script src="../../../assets/js/amazeui.js"></script>   
+</head>
+<body>  
+
+	<div class="topbar">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-6">
+					<a href="#" class="mobileVersion">手机版
+						<div class="qrcode">
+							<h4>关注筑库</h4>
+							<img src="../../../assets/images/qrcode-lg.png" alt="">
+						</div>
+					</a>
+					<span>欢迎您来到筑库网</span>
+					<a href="#" class="login">请登录</a>
+					<a href="#" class="login">免费注册</a>
+				</div><!-- /am-u-sm-6 -->
+				<div class="am-u-sm-6 am-text-right">
+					<a href="#" class="account">我的账户</a>
+					<a href="#" class="account">客服中心</a>
+					<a href="#" class="account">加入收藏</a>
+				</div><!-- /am-u-sm-6 -->
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div> <!-- /topbar -->
+	<div class="header-con">
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-sm-3">
+					<div class="indexlogo"><img src="../../../assets/images/logo.png" alt=""></div>
+				</div><!-- /am-u-sm-3 -->
+				<div class="am-u-sm-9">
+					<div class="header-nav-radius"> 
+						<ul class="nav">
+							<li><a href="36-供应商后台-参与报价.html">参与报价</a></li>
+							<li><a href="../订单管理/供应商后台-订单管理.html">订单管理</a></li>
+							<li class="on"><a href="供应商后台-产品管理.html">产品管理</a></li> 
+							<li><a href="../招标管理/供应方_招标管理.html">招标管理</a></li>
+							<li><a href="../供应方-个人中心-我参与的招募.html">参与招募</a></li> 
+							<li><a href="../我的关注/供应方_我的关注.html">我的关注</a></li> 
+						</ul>
+					</div><!-- /header-nav-radius -->
+				</div><!-- /am-u-sm-9 --> 
+			</div><!-- /am-g-->
+		</div><!-- /am-container -->
+	</div>
+ 
+	<div class="am-container mt20">
+		<div class="boxStyle">  
+			<div class="breadcrumb">
+				<ol class="am-breadcrumb">
+					<li><a href="#">商品管理</a></li> 
+					<li class="am-active"><a href="#">发布商品</a></li> 
+				</ol>
+			</div><!-- /breadcrumb --> 
+		</div><!-- /boxStyle -->  
+
+		<div class="boxStyle" data-am-scrollspynav="{offsetTop: 45}" data-am-sticky="{animation: 'slide-top'}">
+			<div class="nav-tabs-blueborder-top">
+				<ul class="am-nav am-nav-tabs">
+					<li><a href="#jcxx" class="am-active">基础信息</a></li>
+					<li><a href="#xsxx">销售信息</a></li>
+					<li><a href="#tpxx">图片信息</a></li>
+					<li><a href="#wlxx">物流信息</a></li>
+					<li><a href="#shxx">售后信息</a></li>
+				</ul>
+			</div><!-- /nav-tabs-blueborder -->  
+		</div><!-- /boxStyle --> 
+
+		<div class="boxStyle">  
+			<div class="am-padding-sm am-padding-left">
+				<div class="breadcrumb-sm">
+				<label>当前类目：</label>
+				<ol class="am-breadcrumb">
+					<li><a href="#">建筑材料</a></li> 
+					<li><a href="#">墙体材料</a></li> 
+					<li class="am-active"><a href="#">页岩砖</a></li> 
+				</ol>
+				<a href="#" id="switchCategory" class="am-btn am-btn-xs am-radius am-btn-line am-margin-left">切换类目</a>
+			</div><!-- /breadcrumb --> 
+			</div>
+		</div><!-- /boxStyle --> 
+		 
+		<div class="boxStyle"id="jcxx"> 
+			<h4 class="box-title">基础信息</h4> 
+			<div class="boxContent"> 
+				<form class="am-form"> 
+					<div class="my-form">
+							<label class="my-form-label required">选择类目</label>
+							<div class="my-form-input">
+								<div class="am-u-sm-12">
+								<select class="am-input-sm" name="" id=""><option value="">请选择类目</option></select>
+								<small class="am-text-danger">商品上架后不可修改，请谨慎选择</small>
+								</div>
+							</div>
+					</div> 
+					<div class="my-form">
+							<label class="my-form-label required">商品名称</label>
+							<div class="my-form-input">
+								<div class="am-u-sm-12">
+								<input class="am-input-sm" type="text" placeholder="请输入服务产品">
+								</div>
+							</div>
+					</div> 
+					<div class="my-form">
+						<label class="my-form-label">类目属性</label>
+						<div class="my-form-input">
+							<div class="am-u-sm-12">
+								<div class="well">
+									<div class="am-u-sm-4">
+										<div class="my-form">
+											<label class="my-form-label required">品牌</label>
+											<div class="my-form-input">
+												<div class="am-u-sm-12">
+													<select class="am-input-sm" name="" id=""><option value="">请选择品牌</option></select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="am-u-sm-4">
+										<div class="my-form">
+											<label class="my-form-label required">规格型号</label>
+											<div class="my-form-input">
+												<div class="am-u-sm-12">
+													<select class="am-input-sm" name="" id=""><option value="">请选择规格型号</option></select>
+												</div>
+											</div>
+										</div>
+									</div> 
+									<div class="am-u-sm-4">
+										<div class="my-form">
+											<label class="my-form-label ">单位</label>
+											<div class="my-form-input">
+												<div class="am-u-sm-12">
+													<select class="am-input-sm" name="" id=""><option value="">请选择单位</option></select>
+												</div>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div> 
+				</form>
+			</div> <!-- /boxContent -->
+		</div><!-- /boxStyle --> 
+
+		<div class="boxStyle" id="xsxx"> 
+			<h4 class="box-title">销售信息</h4> 
+			<div class="boxContent"> 
+				<form class="am-form"> 
+					<div class="my-form">
+						<label class="my-form-label required">价格</label>
+						<div class="my-form-input">
+							<div class="am-u-sm-12">
+							<input class="am-input-sm" type="text" placeholder="请输入价格（元）">
+							</div>
+						</div>
+					</div> 
+					<div class="my-form">
+						<label class="my-form-label required">商品库存</label>
+						<div class="my-form-input">
+							<div class="am-u-sm-12">
+							<input class="am-input-sm" type="text" placeholder="请输入商品库存">
+							</div>
+						</div>
+					</div> 
+				</form>	
+			</div> <!-- /boxContent -->
+		</div><!-- /boxStyle -->
+
+		<div class="boxStyle" id="tpxx"> 
+			<h4 class="box-title">图片信息</h4> 
+			<div class="boxContent"> 
+				<form class="am-form"> 
+					<div class="my-form">
+						<label class="my-form-label required">宝贝图片</label>
+						<div class="my-form-input">
+							<div class="am-u-sm-12">
+							<em class="tips">主图（建议尺寸为640px*640px，大小不超过500KB），其他图片（选传，单张图片大小不超过500KB，最多10张）</em>
+							<div class="uploadPic"> 
+								<ul class="up">
+									<li>
+										<a href="javascript: void(0)" class="am-close am-close-spin">&times;</a>
+										<img src="../../../assets/images/project.jpg">
+										<span class="required">宝贝主图</span>
+									</li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+									<li><div class="fileinput"><label><i class="am-icon-plus"></i></label><input type="file"></div></li>
+								</ul>
+							</div><!-- /uploadPic -->
+							</div>
+						</div>
+					</div> 
+					<div class="my-form">
+						<label class="my-form-label required">详情描述</label>
+						<div class="my-form-input">
+							<div class="am-u-sm-12">
+							<textarea class="am-input-sm" name="" id="" cols="30" rows="10" placeholder="详情描述"></textarea>
+							</div>
+						</div>
+					</div> 
+				</form>	
+			</div> <!-- /boxContent -->
+		</div><!-- /boxStyle -->
+
+		<div class="boxStyle" id="wlxx"> 
+			<h4 class="box-title">物流信息</h4> 
+			<div class="boxContent"> 
+				<form class="am-form"> 
+					<div class="my-form">
+						<label class="my-form-label required">所在地</label>
+						<div class="my-form-input"> 
+							<div class="am-u-sm-2"><select class="am-input-sm" name="" id=""><option value="">请选择所在地</option></select></div>
+							<div class="am-u-sm-2"><select class="am-input-sm" name="" id=""><option value="">请选择所在地</option></select></div>
+							<div class="am-u-sm-2 am-u-end"><select class="am-input-sm" name="" id=""><option value="">请选择所在地</option></select></div>	
+						</div>
+					</div>  
+				</form>	
+			</div> <!-- /boxContent -->
+		</div><!-- /boxStyle --> 
+
+		<div class="boxStyle" id="shxx"> 
+			<h4 class="box-title">售后信息</h4> 
+			<div class="boxContent"> 
+				<form class="am-form"> 
+					<div class="my-form">
+						<label class="my-form-label required">售后服务</label>
+						<div class="my-form-input">  
+							<div class="am-u-sm-12">
+								<div class="checkbox am-padding-top-xs">
+									<label>
+										<input type="checkbox"> 提供发票
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> 保修服务
+									</label>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="my-form">
+						<label class="my-form-label required">上架时间</label>
+						<div class="my-form-input"> 
+							<div class="am-u-sm-12"> 
+								<em class="tips">定时上架的商品在上架前请到“仓库中的宝贝”里编辑商品</em>
+								<div class="radio am-padding-top-xs">
+									<label class="am-padding-right">
+										<input type="radio"> 立即上架
+									</label>
+									<label class="am-padding-right">
+										<input type="radio"> 定时上架
+									</label>
+									<label>
+										<input type="radio"> 放入仓库
+									</label>
+								</div> 
+							</div>
+						</div>
+					</div>  
+				</form>	
+			</div> <!-- /boxContent -->
+		</div><!-- /boxStyle --> 
+ 
+
+		<div class="boxStyle"> 
+			<div class="boxContent am-text-center"> 
+				<a href="#" class="am-btn am-btn-lg am-radius am-btn-primary">　　发 布 宝 贝　　</a> 
+			</div>
+		</div><!-- /boxStyle -->
+	</div><!-- /am-container --> 
+	
+	<script>
+		$(function() {
+			var $modal = $('#switchCategory-modal');
+			$("#switchCategory").click(function() {
+					$modal.modal({
+						width:1000,
+					});
+				});
+		});
+	</script>
+	<div class="am-modal" tabindex="-1" id="switchCategory-modal">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd am-text-left">选择类目
+				<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+			</div><!-- /am-modal-hd -->
+			<div class="am-modal-bd">
+				<form class="am-form am-g"> 
+					<div class="my-form">
+						<label class="my-form-label required">类目搜索</label>
+						<div class="my-form-input am-u-sm-6">
+							<div class="am-input-group am-input-group-sm">
+								<input type="text" class="am-form-field" placeholder="请输入类目">
+								<span class="am-input-group-btn">
+								<button class="am-btn am-btn-primary" type="button">快速找到类目</button>
+								</span>
+							</div>
+						</div>
+					</div> 
+					<div class="my-form">
+						<label class="my-form-label required">最近使用</label>
+						<div class="my-form-input am-u-sm-6">
+							<select name="" class="am-input-sm" id=""><option value="">请选择</option></select>
+						</div>
+					</div> 
+
+					<div class="am-u-sm-12">
+						<div class="categoryCol">
+							<div class="am-u-sm-4">
+								<div class="am-input-group am-input-group-sm">
+									<input type="text" class="am-form-field" placeholder="请输入名称/拼音字母">
+									<span class="am-input-group-btn">
+										<button class="am-btn am-btn-line" type="button"><i class="am-icon-search"></i></button>
+									</span>
+								</div>
+								<div class="categoryColList">
+									树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>
+								</div>
+							</div><!-- /am-u-sm-4 -->
+							<div class="am-u-sm-4">
+								<div class="am-input-group am-input-group-sm">
+									<input type="text" class="am-form-field" placeholder="请输入名称/拼音字母">
+									<span class="am-input-group-btn">
+										<button class="am-btn am-btn-line" type="button"><i class="am-icon-search"></i></button>
+									</span>
+								</div>
+								<div class="categoryColList">
+									树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>
+								</div>
+							</div><!-- /am-u-sm-4 -->
+							<div class="am-u-sm-4">
+								<div class="am-input-group am-input-group-sm">
+									<input type="text" class="am-form-field" placeholder="请输入名称/拼音字母">
+									<span class="am-input-group-btn">
+										<button class="am-btn am-btn-line" type="button"><i class="am-icon-search"></i></button>
+									</span>
+								</div>
+								<div class="categoryColList">
+									树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>树形菜单<br>
+								</div>
+							</div><!-- /am-u-sm-4 -->
+						</div>	<!-- /categoryCol -->
+					</div>
+
+					<div class="am-u-sm-12">
+					<div class="am-alert am-alert-warning-light">
+							您当前选择的是：建筑设备>给水排水材料
+						</div>
+					</div>
+				</form>
+				
+			</div><!-- /am-modal-bd -->
+			<div class="am-modal-footer"> 
+				<div class="modal-footer-btns am-text-center">
+					<a href="#" class="am-btn am-radius am-btn-primary">发布宝贝</a>  
+				</div>
+			</div><!-- /am-modal-footer -->
+		</div><!-- /am-modal-dialog -->
+	</div><!--/am-modal -->
+
+	<div class="footer">
+		<div class="am-container">
+			<div class="web_link clearfix">
+				<div class="web_link_left">
+					<ul>
+						<li class="link_li_tit">新手指南</li>
+						<li><a href="#!/login">免费注册</a></li>
+						<li><a href="#!/introRecruit">什么是招募</a></li>
+						<li><a>找回密码</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">筑库服务</li>
+						<li><a href="#!/demand">找需求</a></li>
+						<li><a href="#!/supply">找供应</a></li>
+						<li><a href="#!/finance/2">找资金</a></li>
+						<li><a href="#!/finance/1">找项目</a></li>
+						<li><a href="#!/talent/resume">找人才</a></li>
+					</ul>
+					<ul>
+						<li class="link_li_tit">每日最新</li>
+						<li><a href="#!/bid">最新招标</a></li>
+						<li><a href="#!/recruit">最新招募</a></li>
+						<li><a href="#!/talent/index">最新人才</a></li>
+						<li><a href="#!/material">最新资讯</a></li>
+					</ul>
+				</div><!-- /web_link_left -->
+				<div class="web_link_right">
+					<ul>
+						<li>客服热线<br>
+							400 777 3177</li>
+							<li>联系邮箱<br>
+								kefu@zhuku.co</li>
+							</ul>
+						</div><!-- /web_link_right -->
+						<div class="web_link_code">
+							<img class="line fl" src="../../../assets/images/line.png">
+							<p class="text">扫码关注我们</p>
+							<img class="wx-img" src="../../../assets/images/qrcode.jpg">
+							<img class="line fr" src="../../../assets/images/line.png">
+						</div><!-- /web_link_code -->
+					</div><!-- /web_link -->
+					<div class="friend_link clearfix">
+						<div class="friend_link_left">
+							<ul>
+								<li><a href="#!/friend">友情链接</a></li>
+								<li><a href="#!/aboutus">关于我们</a></li>
+								<li><a href="#!/contactus">联系我们</a></li>
+								<li><a href="#!/help">帮助中心</a></li>
+								<li><a href="#!/laws">法律声明</a></li>
+								<li><a href="#!/services">服务条款</a></li>
+							</ul>
+						</div><!-- /friend_link_left -->
+						<div class="friend_link_right">
+							<a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备16002584号-3</a>
+						</div><!-- /friend_link_right -->
+					</div><!-- /friend_link -->
+				</div><!-- /am-container -->
+			</div><!-- /footer -->
+
+		</body>
+		</html>
