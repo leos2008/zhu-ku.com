@@ -1,0 +1,6 @@
+{
+    "less.compile": {
+        "out": "${workspaceRoot}\\assets\\css\\"
+    },
+    "breadcrumbs.enabled": true
+}
